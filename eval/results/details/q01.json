@@ -1,0 +1,618 @@
+{
+  "id": "q01",
+  "question": "提出 Transformer 架构的论文发表于哪一年的哪个会议？该论文的第一作者是谁？",
+  "gold": "2017 年的 NeurIPS（当时称 NIPS 2017）；第一作者是 Ashish Vaswani。",
+  "configs": {
+    "ReAct": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告包含全部要点：2017年、NeurIPS（原称NIPS）会议，以及第一作者Ashish Vaswani，且与标准答案一致。",
+      "claims": 2,
+      "supported": 1,
+      "partial": 1,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.75,
+      "hallucination_rate": 0.0,
+      "seconds": 50.42,
+      "llm_calls": 2,
+      "total_tokens": 1748,
+      "tool_calls": 1,
+      "report": "提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年的 NeurIPS（Conference on Neural Information Processing Systems，原称 NIPS）会议**。该论文的第一作者是 **Ashish Vaswani（阿希什·瓦斯瓦尼）**。[S2][S5]"
+    },
+    "+Plan-and-Solve": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确给出发表于2017年、NeurIPS 2017（即当时的NIPS 2017），并指出第一作者为Ashish Vaswani，所有必需要点均正确。",
+      "claims": 6,
+      "supported": 4,
+      "partial": 0,
+      "unsupported": 2,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.6667,
+      "hallucination_rate": 0.3333,
+      "seconds": 181.56,
+      "llm_calls": 11,
+      "total_tokens": 14580,
+      "tool_calls": 7,
+      "report": "## 结论\n\n明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]  \n该论文作者列表中排在第一位的是 **Ashish Vaswani**；不过来源同时说明八位作者均为同等贡献者，且署名顺序经过随机化。[S1]\n\n## 详细分析\n\n- 《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]\n\n- 来源列出的作者依次为 Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan Gomez、Łukasz Kaiser 和 Illia Polosukhin，其中作者列表首位为 Ashish Vaswani。[S1]\n\n- 关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al. NeurIPS 2017”。[S1][S5]\n\n- 因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]"
+    },
+    "+Reflection": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确给出论文发表于2017年、NeurIPS 2017，并指出第一作者为Ashish Vaswani，所有必需要点均正确。",
+      "claims": 6,
+      "supported": 4,
+      "partial": 0,
+      "unsupported": 2,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.6667,
+      "hallucination_rate": 0.3333,
+      "seconds": 184.39,
+      "llm_calls": 12,
+      "total_tokens": 15509,
+      "tool_calls": 7,
+      "report": "## 结论\n\n明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]  \n该论文作者列表中排在第一位的是 **Ashish Vaswani**；不过来源同时说明八位作者均为同等贡献者，且署名顺序经过随机化。[S1]\n\n## 详细分析\n\n- 《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]\n\n- 来源列出的作者依次为 Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan Gomez、Łukasz Kaiser 和 Illia Polosukhin，其中作者列表首位为 Ashish Vaswani。[S1]\n\n- 关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al. NeurIPS 2017”。[S1][S5]\n\n- 因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]"
+    },
+    "+溯源验证": {
+      "accuracy": 0.5,
+      "accuracy_reason": "报告正确指出论文发表于2017年NeurIPS（NIPS）2017，但未明确说明第一作者是Ashish Vaswani；仅出现“Vaswani et al.”不足以完整满足第一作者要点。",
+      "claims": 4,
+      "supported": 4,
+      "partial": 0,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 1.0,
+      "hallucination_rate": 0.0,
+      "seconds": 189.58,
+      "llm_calls": 13,
+      "total_tokens": 17245,
+      "tool_calls": 7,
+      "report": "## 结论\n\n明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]  \n\n## 详细分析\n\n- 《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]\n\n- 关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al. NeurIPS 2017”。[S1][S5]\n\n- 因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]"
+    }
+  },
+  "runs": {
+    "react": {
+      "question": "提出 Transformer 架构的论文发表于哪一年的哪个会议？该论文的第一作者是谁？",
+      "standalone_question": "提出 Transformer 架构的论文发表于哪一年的哪个会议？该论文的第一作者是谁？",
+      "plan_rationale": "",
+      "findings": [
+        {
+          "question": "提出 Transformer 架构的论文发表于哪一年的哪个会议？该论文的第一作者是谁？",
+          "answer": "提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年的 NeurIPS（Conference on Neural Information Processing Systems，原称 NIPS）会议**。该论文的第一作者是 **Ashish Vaswani（阿希什·瓦斯瓦尼）**。[S2][S5]",
+          "steps": [
+            {
+              "thought": "需要核实提出 Transformer 架构的论文《Attention Is All You Need》的发表年份、会议及第一作者。",
+              "action": "web_search",
+              "action_input": {
+                "query": "Attention Is All You Need NeurIPS 2017 first author"
+              },
+              "observation": "[S1] Attention is All you Need | https://papers.neurips.cc/paper/7181-attention-is-all-you-need.pdf\nAshish, with Illia, designed and implemented the first Transformer models and has been crucially involved in every aspect of this work. Noam proposed scaled dot ...\n\n[S2] Attention Is All You Need | h",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5"
+              ]
+            }
+          ],
+          "finished": true
+        }
+      ],
+      "followups": [],
+      "critique": null,
+      "verification": null,
+      "report": "提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年的 NeurIPS（Conference on Neural Information Processing Systems，原称 NIPS）会议**。该论文的第一作者是 **Ashish Vaswani（阿希什·瓦斯瓦尼）**。[S2][S5]\n\n## 参考来源\n- [S2] Attention Is All You Need — https://en.wikipedia.org/wiki/Attention_Is_All_You_Need\n- [S5] Attention is All you Need — https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "web_search",
+          "title": "Attention is All you Need",
+          "url": "https://papers.neurips.cc/paper/7181-attention-is-all-you-need.pdf",
+          "content": "Ashish, with Illia, designed and implemented the first Transformer models and has been crucially involved in every aspect of this work. Noam proposed scaled dot ...",
+          "query": "Attention Is All You Need NeurIPS 2017 first author"
+        },
+        {
+          "id": "S2",
+          "tool": "web_search",
+          "title": "Attention Is All You Need",
+          "url": "https://en.wikipedia.org/wiki/Attention_Is_All_You_Need",
+          "content": "\"Attention Is All You Need\" is a 2017 research paper on machine learning authored by eight scientists and engineers working at Google. The paper introduced ...",
+          "query": "Attention Is All You Need NeurIPS 2017 first author"
+        },
+        {
+          "id": "S3",
+          "tool": "web_search",
+          "title": "[1706.03762] Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762",
+          "content": "View a PDF of the paper titled Attention Is All You Need, by Ashish Vaswani and 7 other authors. View PDF HTML (experimental). Abstract:The ...",
+          "query": "Attention Is All You Need NeurIPS 2017 first author"
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "\"But Google is the author of 'Attention Is All You Need', they ...",
+          "url": "https://www.reddit.com/r/ChatGPT/comments/125i04d/but_google_is_the_author_of_attention_is_all_you/",
+          "content": "True origin of the \"attention\" in \"Attention is all you need\" paper, from Andrej Karpathy who received it from the first author of the OG paper.",
+          "query": "Attention Is All You Need NeurIPS 2017 first author"
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "Attention is All you Need",
+          "url": "https://papers.nips.cc/paper/7181-attention-is-all-you-need",
+          "content": "Attention is All you Need. Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, Illia Polosukhin. Advances in ...",
+          "query": "Attention Is All You Need NeurIPS 2017 first author"
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "react",
+          "report": "提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年的 NeurIPS（Conference on Neural Information Processing Systems，原称 NIPS）会议**。该论文的第一作者是 **Ashish Vaswani（阿希什·瓦斯瓦尼）**。[S2][S5]",
+          "seconds": 50.42,
+          "llm_calls": 2,
+          "total_tokens": 1748,
+          "tool_calls": 1
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 2,
+          "prompt_tokens": 1556,
+          "completion_tokens": 192,
+          "seconds": 3.296389459166676,
+          "total_tokens": 1748
+        },
+        "stages": {
+          "execute": {
+            "calls": 2,
+            "prompt_tokens": 1556,
+            "completion_tokens": 192,
+            "seconds": 3.296389459166676,
+            "total_tokens": 1748
+          }
+        }
+      },
+      "seconds": 50.42,
+      "tool_calls": 1
+    },
+    "full": {
+      "question": "提出 Transformer 架构的论文发表于哪一年的哪个会议？该论文的第一作者是谁？",
+      "standalone_question": "提出 Transformer 架构的论文发表于哪一年的哪个会议？该论文的第一作者是谁？",
+      "plan_rationale": "先定位明确提出 Transformer 架构的论文，再从其正式发表记录中核实会议、年份和作者顺序。",
+      "findings": [
+        {
+          "question": "检索明确提出 Transformer 架构的论文，并确认其论文标题及作者列表。",
+          "answer": "明确提出 Transformer 架构的论文是 **《Attention Is All You Need》**（2017）。该论文提出了一种称为 **Transformer** 的新深度学习架构。[S1]\n\n作者列表：\n1. Ashish Vaswani\n2. Noam Shazeer\n3. Niki Parmar\n4. Jakob Uszkoreit\n5. Llion Jones\n6. Aidan N. Gomez\n7. Łukasz Kaiser\n8. Illia Polosukhin\n\n来源列出的作者为 Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan Gomez、Łukasz Kaiser 和 Illia Polosukhin，并说明八人均为同等贡献者，署名顺序经过随机化。[S1]",
+          "steps": [
+            {
+              "thought": "需要检索原始论文以核实明确提出 Transformer 架构的论文标题与完整作者列表。",
+              "action": "web_search",
+              "action_input": {
+                "query": "Attention Is All You Need Transformer paper authors arXiv",
+                "num_results": 5
+              },
+              "observation": "工具调用失败：TimeoutError: SerpApi 搜索超时，请稍后重试或改用 wiki_search",
+              "source_ids": []
+            },
+            {
+              "thought": "网页搜索超时；改用百科检索确认 Transformer 的原始论文及作者信息。",
+              "action": "wiki_search",
+              "action_input": {
+                "query": "Attention Is All You Need",
+                "lang": "en"
+              },
+              "observation": "[S1] Attention Is All You Need | https://en.wikipedia.org/wiki/Attention_Is_All_You_Need\n\"Attention Is All You Need\" is a 2017 research paper on machine learning authored by eight scientists and engineers working at Google. The paper introduced a new deep learning architecture known as the transform",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3"
+              ]
+            },
+            {
+              "thought": "检索结果已确认该论文提出 Transformer，但摘要未列出作者姓名；读取词条正文以核实完整作者列表。",
+              "action": "fetch_page",
+              "action_input": {
+                "url": "https://en.wikipedia.org/wiki/Attention_Is_All_You_Need"
+              },
+              "observation": "[S1] Attention Is All You Need | https://en.wikipedia.org/wiki/Attention_Is_All_You_Need\nFrom Wikipedia, the free encyclopedia\n2017 research paper by Google\nAttention Is All You Need\nAn illustration of main components of the transformer model from the paper\nProject type\nArtificial intelligence\nresea",
+              "source_ids": [
+                "S1"
+              ]
+            }
+          ],
+          "finished": true
+        },
+        {
+          "question": "根据上一步找到的论文，检索其正式发表的会议名称和发表年份，并确认作者列表中的第一作者。",
+          "answer": "结论：该论文《Attention Is All You Need》的发表年份为 **2017 年**；作者列表中排在第一位的作者是 **Ashish Vaswani**。[S1] 搜索结果也将该论文标为“Vaswani et al. NeurIPS 2017”，但这不是正式会议论文集页面，因此基于当前证据只能将其会议名称暂记为 **NeurIPS 2017**，无法严格核实其正式全称。[S5]",
+          "steps": [
+            {
+              "thought": "已知论文为《Attention Is All You Need》，需要核实其正式发表的会议名称、发表年份及作者列表首位。",
+              "action": "web_search",
+              "action_input": {
+                "query": "Attention Is All You Need official conference proceedings 2017 Ashish Vaswani"
+              },
+              "observation": "[S4] Attention is all you need | Programming Ocean Academy | https://www.programming-ocean.com/articles/attention-is-all-you-need.php\n\"Attention is All You Need\"—this groundbreaking paper introduces the Transformer, a revolutionary neural network architecture that redefines sequence ...\n\n[S5] Attent",
+              "source_ids": [
+                "S4",
+                "S5",
+                "S6",
+                "S7",
+                "S8"
+              ]
+            },
+            {
+              "thought": "搜索结果仅提供了非正式或二手页面的线索，需通过会议官方论文集核实正式会议名称、年份和作者署名。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:proceedings.neurips.cc \"Attention Is All You Need\" Vaswani"
+              },
+              "observation": "[S9] Revolutionizing AI with the Transformer Model: “Attention Is ... | https://www.artificial-intelligence.blog/ai-news/attention-is-all-you-need\nIn 2017, a groundbreaking paper titled “Attention Is All You Need” introduced the Transformer model, which fundamentally changed the landscape ...\n\n[S10]",
+              "source_ids": [
+                "S9",
+                "S10",
+                "S11",
+                "S12",
+                "S13"
+              ]
+            },
+            {
+              "thought": "未检索到官方论文集页面，改用权威书目数据库 DBLP 核实该论文的正式会议论文集信息及作者顺序。",
+              "action": "web_search",
+              "action_input": {
+                "query": "DBLP Attention Is All You Need Vaswani NIPS 2017"
+              },
+              "observation": "工具调用失败：TimeoutError: SerpApi 搜索超时，请稍后重试或改用 wiki_search",
+              "source_ids": []
+            },
+            {
+              "thought": "DBLP 检索因超时未返回结果；改用会议论文集的常用书目页面检索，以确认正式发表信息和作者排序。",
+              "action": "web_search",
+              "action_input": {
+                "query": "\"Attention Is All You Need\" \"Advances in Neural Information Processing Systems 30\""
+              },
+              "observation": "[S14] A Deep Dive into the Transformer Model Design | https://www.linkedin.com/pulse/why-attention-all-you-need-deep-dive-transformer-model-padhy-cijwc\nThe term \"Attention is All You Need\" emphasizes that by using attention mechanisms, the Transformer model can replace the need for sequential ...\n\n[",
+              "source_ids": [
+                "S14",
+                "S15",
+                "S16",
+                "S17",
+                "S18"
+              ]
+            }
+          ],
+          "finished": false
+        }
+      ],
+      "followups": [],
+      "critique": {
+        "score": 10,
+        "issues": [],
+        "follow_up_questions": [],
+        "needs_revision": false
+      },
+      "verification": {
+        "stats": {
+          "claims": 5,
+          "supported": 3,
+          "partial": 0,
+          "unsupported": 2,
+          "removed": 2,
+          "fabricated_citations": 0,
+          "support_rate": 0.6,
+          "hallucination_rate": 0.4
+        },
+        "checks": [
+          {
+            "id": 1,
+            "text": "明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]",
+            "citations": [
+              "S1",
+              "S5"
+            ],
+            "label": "supported",
+            "reason": "S1载明2017及Transformer；S5载明NeurIPS 2017"
+          },
+          {
+            "id": 2,
+            "text": "该论文作者列表中排在第一位的是 **Ashish Vaswani**；不过来源同时说明八位作者均为同等贡献者，且署名顺序经过随机化。[S1]",
+            "citations": [
+              "S1"
+            ],
+            "label": "unsupported",
+            "reason": "来源未列作者、同等贡献或随机署名"
+          },
+          {
+            "id": 3,
+            "text": "《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]",
+            "citations": [
+              "S1"
+            ],
+            "label": "supported",
+            "reason": "S1明确称其为2017论文并引入Transformer"
+          },
+          {
+            "id": 4,
+            "text": "来源列出的作者依次为 Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan Gomez、Łukasz Kaiser 和 Illia Polosukhin，其中作者列表首位为 Ashish Vaswani。[S1]",
+            "citations": [
+              "S1"
+            ],
+            "label": "unsupported",
+            "reason": "所给S1原文未提供作者名单及排序"
+          },
+          {
+            "id": 5,
+            "text": "关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al.",
+            "citations": [],
+            "label": "supported",
+            "reason": "S1标2017并链接NeurIPS页面；S5标NeurIPS 2017"
+          },
+          {
+            "id": 6,
+            "text": "NeurIPS 2017”。[S1][S5]",
+            "citations": [
+              "S1",
+              "S5"
+            ],
+            "label": "not_claim",
+            "reason": "仅为残缺短语，未构成可核查陈述"
+          },
+          {
+            "id": 7,
+            "text": "因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]",
+            "citations": [
+              "S5"
+            ],
+            "label": "not_claim",
+            "reason": "属于对现有材料未能确认的说明"
+          }
+        ],
+        "removed": [
+          {
+            "id": 2,
+            "text": "该论文作者列表中排在第一位的是 **Ashish Vaswani**；不过来源同时说明八位作者均为同等贡献者，且署名顺序经过随机化。[S1]",
+            "citations": [
+              "S1"
+            ],
+            "label": "unsupported",
+            "reason": "来源未列作者、同等贡献或随机署名"
+          },
+          {
+            "id": 4,
+            "text": "来源列出的作者依次为 Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan Gomez、Łukasz Kaiser 和 Illia Polosukhin，其中作者列表首位为 Ashish Vaswani。[S1]",
+            "citations": [
+              "S1"
+            ],
+            "label": "unsupported",
+            "reason": "所给S1原文未提供作者名单及排序"
+          }
+        ],
+        "fabricated_citations": []
+      },
+      "report": "## 结论\n\n明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]  \n\n## 详细分析\n\n- 《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]\n\n- 关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al. NeurIPS 2017”。[S1][S5]\n\n- 因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]\n\n## 参考来源\n- [S1] Attention Is All You Need — https://en.wikipedia.org/wiki/Attention_Is_All_You_Need\n- [S5] Attention Is All You Need — https://ysu1989.github.io/courses/au20/cse5539/Transformer.pdf",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "wiki_search",
+          "title": "Attention Is All You Need",
+          "url": "https://en.wikipedia.org/wiki/Attention_Is_All_You_Need",
+          "content": "From Wikipedia, the free encyclopedia\n2017 research paper by Google\nAttention Is All You Need\nAn illustration of main components of the transformer model from the paper\nProject type\nArtificial intelligence\nresearch\nSponsors\nGoogle\nObjective\nProvide a novel approach to train AI\nDuration\nJune\n12, 2017",
+          "query": "Attention Is All You Need"
+        },
+        {
+          "id": "S2",
+          "tool": "wiki_search",
+          "title": "All You Need Is Kill",
+          "url": "https://en.wikipedia.org/wiki/All_You_Need_Is_Kill",
+          "content": "All You Need Is Kill is a Japanese science fiction light novel by Hiroshi Sakurazaka with illustrations by Yoshitoshi Abe. The book was published in Japanese by Shueisha under their Super Dash Bunko imprint in December 2004, and was later released in English by Viz Media under their Haikasoru imprin",
+          "query": "Attention Is All You Need"
+        },
+        {
+          "id": "S3",
+          "tool": "wiki_search",
+          "title": "All You Need Is Love",
+          "url": "https://en.wikipedia.org/wiki/All_You_Need_Is_Love",
+          "content": "\"All You Need Is Love\" is a song by the English rock band the Beatles that was released as a non-album single in July 1967, with \"Baby, You're a Rich Man\" as its B-side. It was written by John Lennon and credited to the Lennon–McCartney partnership. The song was Britain's contribution to Our World, ",
+          "query": "Attention Is All You Need"
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "Attention is all you need | Programming Ocean Academy",
+          "url": "https://www.programming-ocean.com/articles/attention-is-all-you-need.php",
+          "content": "\"Attention is All You Need\"—this groundbreaking paper introduces the Transformer, a revolutionary neural network architecture that redefines sequence ...",
+          "query": "Attention Is All You Need official conference proceedings 2017 Ashish Vaswani"
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "Attention Is All You Need",
+          "url": "https://ysu1989.github.io/courses/au20/cse5539/Transformer.pdf",
+          "content": "“Attention Is All You Need,” Vaswani et al. NeurIPS 2017. ○. “Why Self-Attention? A Targeted Evaluation of Neural Machine Translation Architectures,” Tang et ...",
+          "query": "Attention Is All You Need official conference proceedings 2017 Ashish Vaswani"
+        },
+        {
+          "id": "S6",
+          "tool": "web_search",
+          "title": "Attention Is All You Need Explained - The Paper That ...",
+          "url": "https://parseur.com/blog/attention-is-all-you-need",
+          "content": "The 2017 paper Attention Is All You Need introduced the Transformer architecture, the breakthrough behind modern AI systems like ChatGPT, ...",
+          "query": "Attention Is All You Need official conference proceedings 2017 Ashish Vaswani"
+        },
+        {
+          "id": "S7",
+          "tool": "web_search",
+          "title": "Transformer of \"Attention Is All You Need\" (Vaswani et al. ...",
+          "url": "https://github.com/soskek/attention_is_all_you_need",
+          "content": "Chainer-based Python implementation of Transformer, an attention-based seq2seq model without convolution and recurrence. If you want to see the architecture ...",
+          "query": "Attention Is All You Need official conference proceedings 2017 Ashish Vaswani"
+        },
+        {
+          "id": "S8",
+          "tool": "web_search",
+          "title": "Attention Is All You Need (2017): The Architecture That Ate ...",
+          "url": "https://sparsenotes.com/posts/2026/05/papers/2026-05-30-attention-is-all-you-need/",
+          "content": "The 2017 Vaswani et al. paper that introduced the Transformer — replacing recurrence and convolution with stacked self-attention, ...",
+          "query": "Attention Is All You Need official conference proceedings 2017 Ashish Vaswani"
+        },
+        {
+          "id": "S9",
+          "tool": "web_search",
+          "title": "Revolutionizing AI with the Transformer Model: “Attention Is ...",
+          "url": "https://www.artificial-intelligence.blog/ai-news/attention-is-all-you-need",
+          "content": "In 2017, a groundbreaking paper titled “Attention Is All You Need” introduced the Transformer model, which fundamentally changed the landscape ...",
+          "query": "site:proceedings.neurips.cc \"Attention Is All You Need\" Vaswani"
+        },
+        {
+          "id": "S10",
+          "tool": "web_search",
+          "title": "Understanding the Transformer Architecture from 'Attention ...",
+          "url": "https://mrarnav69.medium.com/understanding-the-transformer-architecture-from-attention-is-all-you-need-f41a09e743a7",
+          "content": "The transformer architecture, introduced in the 2017 paper “Attention Is All You Need” by Ashish Vaswani et al., fundamentally changed how ...",
+          "query": "site:proceedings.neurips.cc \"Attention Is All You Need\" Vaswani"
+        },
+        {
+          "id": "S11",
+          "tool": "web_search",
+          "title": "Attention Is All You Need",
+          "url": "https://dokumen.pub/attention-is-all-you-need-l-4648890.html",
+          "content": "Attention Is All You Need. The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-. 460 90 2MB.",
+          "query": "site:proceedings.neurips.cc \"Attention Is All You Need\" Vaswani"
+        },
+        {
+          "id": "S12",
+          "tool": "web_search",
+          "title": "\"Attention Is All You Need\": The Transformer Architecture ...",
+          "url": "https://www.linkedin.com/posts/fivewlabs_attention-is-all-you-need-activity-7385403795599413248-UlvZ",
+          "content": "2017: \"Attention Is All You Need\" drops 2025: Every AI you've ever talked to runs on it. Ashish Vaswani, Noam Shazeer, Niki Parmar, ...",
+          "query": "site:proceedings.neurips.cc \"Attention Is All You Need\" Vaswani"
+        },
+        {
+          "id": "S13",
+          "tool": "web_search",
+          "title": "Attention is all you need - Transformers - Master Data Science",
+          "url": "https://datahacker.rs/attention-is-all-you-need-transformers/",
+          "content": "... Attention is All You Need” by Vaswani et al. in 2017 [2]. Initially focused on addressing challenges in Natural Language Processing (NLP) ...",
+          "query": "site:proceedings.neurips.cc \"Attention Is All You Need\" Vaswani"
+        },
+        {
+          "id": "S14",
+          "tool": "web_search",
+          "title": "A Deep Dive into the Transformer Model Design",
+          "url": "https://www.linkedin.com/pulse/why-attention-all-you-need-deep-dive-transformer-model-padhy-cijwc",
+          "content": "The term \"Attention is All You Need\" emphasizes that by using attention mechanisms, the Transformer model can replace the need for sequential ...",
+          "query": "\"Attention Is All You Need\" \"Advances in Neural Information Processing Systems 30\""
+        },
+        {
+          "id": "S15",
+          "tool": "web_search",
+          "title": "Transformer Architecture: Attention Is All You Need",
+          "url": "https://medium.com/@adityathiruvengadam/transformer-architecture-attention-is-all-you-need-aeccd9f50d09",
+          "content": "Transformer Architecture: Attention Is All You Need In this post, we are going to explore the concept of attention and look at how it powers ...",
+          "query": "\"Attention Is All You Need\" \"Advances in Neural Information Processing Systems 30\""
+        },
+        {
+          "id": "S16",
+          "tool": "web_search",
+          "title": "E14 - Attention is all you need - The AI Research",
+          "url": "https://open.spotify.com/episode/3ej8u4BWNm66MFDxnu0ACJ",
+          "content": "The paper \"Attention Is All You Need\" proposes a novel neural network architecture, the Transformer, which relies solely on attention ...",
+          "query": "\"Attention Is All You Need\" \"Advances in Neural Information Processing Systems 30\""
+        },
+        {
+          "id": "S17",
+          "tool": "web_search",
+          "title": "1706.03762",
+          "url": "https://papers.cool/arxiv/1706.03762",
+          "content": "#1 Attention Is All You Need [PDF 1039] [Copy] [Kimi 605] [REL] ... The dominant sequence transduction models are based on complex recurrent or ...",
+          "query": "\"Attention Is All You Need\" \"Advances in Neural Information Processing Systems 30\""
+        },
+        {
+          "id": "S18",
+          "tool": "web_search",
+          "title": "Transformer “Attention Is All You Need” | by TAUIL Hafsa",
+          "url": "https://medium.com/@hasfatauil12/transformer-attention-is-all-you-need-79e34353d6a5",
+          "content": "Transformer “Attention Is All You Need” In machine learning, sequence tasks involve inputs and outputs that are ordered sequences, ...",
+          "query": "\"Attention Is All You Need\" \"Advances in Neural Information Processing Systems 30\""
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "plan_solve",
+          "report": "## 结论\n\n明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]  \n该论文作者列表中排在第一位的是 **Ashish Vaswani**；不过来源同时说明八位作者均为同等贡献者，且署名顺序经过随机化。[S1]\n\n## 详细分析\n\n- 《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]\n\n- 来源列出的作者依次为 Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan Gomez、Łukasz Kaiser 和 Illia Polosukhin，其中作者列表首位为 Ashish Vaswani。[S1]\n\n- 关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al. NeurIPS 2017”。[S1][S5]\n\n- 因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]",
+          "seconds": 181.56,
+          "llm_calls": 11,
+          "total_tokens": 14580,
+          "tool_calls": 7
+        },
+        {
+          "stage": "reflection",
+          "report": "## 结论\n\n明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]  \n该论文作者列表中排在第一位的是 **Ashish Vaswani**；不过来源同时说明八位作者均为同等贡献者，且署名顺序经过随机化。[S1]\n\n## 详细分析\n\n- 《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]\n\n- 来源列出的作者依次为 Ashish Vaswani、Noam Shazeer、Niki Parmar、Jakob Uszkoreit、Llion Jones、Aidan Gomez、Łukasz Kaiser 和 Illia Polosukhin，其中作者列表首位为 Ashish Vaswani。[S1]\n\n- 关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al. NeurIPS 2017”。[S1][S5]\n\n- 因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]",
+          "seconds": 184.39,
+          "llm_calls": 12,
+          "total_tokens": 15509,
+          "tool_calls": 7
+        },
+        {
+          "stage": "verified",
+          "report": "## 结论\n\n明确提出 Transformer 架构的论文是《Attention Is All You Need》，发表于 **2017 年**，会议可暂记为 **NeurIPS 2017**；但根据现有材料，无法严格核实该会议的正式全称。[S1][S5]  \n\n## 详细分析\n\n- 《Attention Is All You Need》是一篇 2017 年研究论文，并提出了一种名为 **Transformer** 的新深度学习架构，因此它是研究问题所指“提出 Transformer 架构的论文”。[S1]\n\n- 关于发表时间，来源将该论文标注为 2017 年；关于会议，论文页面链接指向 NeurIPS 2017 论文集页面，另一来源也标注为“Vaswani et al. NeurIPS 2017”。[S1][S5]\n\n- 因提供的材料未直接给出并严格验证会议正式全称，故可将会议表述为“NeurIPS 2017”，但不能仅据现有证据进一步确定其正式名称。[S5]",
+          "seconds": 189.58,
+          "llm_calls": 13,
+          "total_tokens": 17245,
+          "tool_calls": 7
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 13,
+          "prompt_tokens": 15054,
+          "completion_tokens": 2191,
+          "seconds": 31.504006960778497,
+          "total_tokens": 17245
+        },
+        "stages": {
+          "plan": {
+            "calls": 1,
+            "prompt_tokens": 259,
+            "completion_tokens": 115,
+            "seconds": 1.9032896249555051,
+            "total_tokens": 374
+          },
+          "execute": {
+            "calls": 9,
+            "prompt_tokens": 12031,
+            "completion_tokens": 1030,
+            "seconds": 17.931126668700017,
+            "total_tokens": 13061
+          },
+          "write": {
+            "calls": 1,
+            "prompt_tokens": 799,
+            "completion_tokens": 346,
+            "seconds": 3.658297250047326,
+            "total_tokens": 1145
+          },
+          "reflect": {
+            "calls": 1,
+            "prompt_tokens": 742,
+            "completion_tokens": 187,
+            "seconds": 2.826692625065334,
+            "total_tokens": 929
+          },
+          "verify": {
+            "calls": 1,
+            "prompt_tokens": 1223,
+            "completion_tokens": 513,
+            "seconds": 5.184600792010315,
+            "total_tokens": 1736
+          }
+        }
+      },
+      "seconds": 189.58,
+      "tool_calls": 7
+    }
+  }
+}

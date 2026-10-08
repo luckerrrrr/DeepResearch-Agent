@@ -1,0 +1,1139 @@
+{
+  "id": "q08",
+  "question": "GPT-3 论文的英文标题是什么？它获得了哪一年 NeurIPS 的最佳论文奖？",
+  "gold": "Language Models are Few-Shot Learners；NeurIPS 2020 最佳论文奖。",
+  "configs": {
+    "ReAct": {
+      "accuracy": 0.0,
+      "accuracy_reason": "报告正确给出了论文标题，但明确否认其获得 NeurIPS 最佳论文奖，并将 NeurIPS 2020 仅表述为发表年份，和标准答案中的获奖年份要点相矛盾。",
+      "claims": 2,
+      "supported": 1,
+      "partial": 0,
+      "unsupported": 1,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.5,
+      "hallucination_rate": 0.5,
+      "seconds": 22.38,
+      "llm_calls": 6,
+      "total_tokens": 11252,
+      "tool_calls": 5,
+      "report": "GPT-3 论文的英文标题是 **“Language Models are Few-Shot Learners”**；它发表于 NeurIPS 2020。[S14][S17]\n\n不过，现有可靠信息**不能证实该论文获得过 NeurIPS 最佳论文奖**。因此没有可确认的获奖年份；题目可能将“发表于 NeurIPS 2020”误写成“获得 NeurIPS 最佳论文奖”。[S14][S17]"
+    },
+    "+Plan-and-Solve": {
+      "accuracy": 0.0,
+      "accuracy_reason": "报告正确给出了论文标题“Language Models are Few-Shot Learners”，但明确称无法确认其获得 NeurIPS 最佳论文奖及年份，与标准答案“NeurIPS 2020 最佳论文奖”直接矛盾。",
+      "claims": 5,
+      "supported": 3,
+      "partial": 1,
+      "unsupported": 1,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.7,
+      "hallucination_rate": 0.2,
+      "seconds": 88.66,
+      "llm_calls": 9,
+      "total_tokens": 11040,
+      "tool_calls": 5,
+      "report": "## 结论\n\nGPT-3 原始论文的正式英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]  \n根据现有来源材料，无法确认该论文是否曾获得 NeurIPS 最佳论文奖，因此也无法确认其获奖年份。[S1][S4][S11][S12][S13]\n\n## 详细分析\n\n1. 来源材料将 GPT-3 对应论文明确标注为 **“GPT-3: Language Models are Few-Shot Learners”**，支持其正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1] 另一来源同样以“Language Models are Few-Shot Learners (GPT-3)”指称该论文，形成交叉印证。[S4]\n\n2. 关于 NeurIPS 最佳论文奖，现有材料中虽出现“NeurIPS 2020 Outstanding Paper”的视频标题描述，但该材料本身不足以作为官方获奖记录，且无法据此确认“Outstanding Paper”与研究问题所称“最佳论文奖”的对应关系及其正式获奖事实。[S4]\n\n3. 已有针对 NeurIPS 最佳论文的检索未获得能够确认该论文获奖的官方记录；相关检索结果要么与问题无关，要么未提供 GPT-3 论文获奖信息。[S11][S12][S13] 因此，基于现有证据，不能断言该论文获得过 NeurIPS 最佳论文奖，也不能确定任何获奖年份。[S1][S4][S11][S12][S13]"
+    },
+    "+Reflection": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确给出论文标题“Language Models are Few-Shot Learners”，并明确指出其对应 NeurIPS 2020 Outstanding Paper、获奖年份为2020年，包含所有必需要点。",
+      "claims": 10,
+      "supported": 8,
+      "partial": 2,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.9,
+      "hallucination_rate": 0.0,
+      "seconds": 125.38,
+      "llm_calls": 16,
+      "total_tokens": 25194,
+      "tool_calls": 9,
+      "report": "## 结论\n\nGPT-3 对应论文的英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]  \n\n现有材料将该论文标注为 **“NeurIPS 2020 Outstanding Paper”**；因此，若将问题中的“最佳论文奖”概括性地指代 NeurIPS 的 **Outstanding Paper Award**，其对应年份为 **2020 年**。[S4]  \n\n不过，现有材料未提供 NeurIPS 官方 2020 年奖项页面或完整获奖名单，因而无法仅凭现有来源独立核实该论文被 NeurIPS 官方正式列入 Outstanding Paper Award 获奖论文名单。[S19][S24][S28][S40]\n\n## 详细分析\n\n1. GPT-3 论文的正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1][S4] 现有材料分别以“GPT-v3: Language Models are Few-Shot Learners”和“Language Models are Few-Shot Learners (GPT-3)”指称该论文。[S1][S4]\n\n2. 该论文被引用为发表于或收录于 NeurIPS 2020 的论文。[S22][S42] 但论文收录于 NeurIPS 2020 仅能说明其会议发表信息，不能单独证明其获得会议奖项。[S22][S42]\n\n3. 现有材料中有来源将该论文直接标注为 **“NeurIPS 2020 Outstanding Paper”**。[S4] 因此，在将中文“最佳论文奖”作为对 NeurIPS 杰出论文奖项的概括性表述时，可回答其获奖年份为 **2020 年**。[S4]\n\n4. “Outstanding Paper Award”是应与中文“最佳论文奖”加以区分的正式英文奖项表述；现有来源片段未包含 NeurIPS 官方 2020 年奖项页面或官方获奖论文名单。[S19][S24][S28][S40] 因此，2020 年这一回答依据现有的“NeurIPS 2020 Outstanding Paper”标注得出，但该标注尚未得到现有材料中的 NeurIPS 官方获奖记录独立验证。[S4][S19][S24][S28][S40]"
+    },
+    "+溯源验证": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确给出论文标题“Language Models are Few-Shot Learners”，并指出其对应 NeurIPS 2020 Outstanding Paper，即获奖年份为2020年，包含全部必需要点。",
+      "claims": 9,
+      "supported": 7,
+      "partial": 2,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.8889,
+      "hallucination_rate": 0.0,
+      "seconds": 134.81,
+      "llm_calls": 18,
+      "total_tokens": 28105,
+      "tool_calls": 9,
+      "report": "## 结论\n\nGPT-3 对应论文的英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]  \n\n现有材料将该论文标注为 **“NeurIPS 2020 Outstanding Paper”**；因此，若将问题中的“最佳论文奖”概括性地指代 NeurIPS 的 **Outstanding Paper Award**，其对应年份为 **2020 年**。[S4]  \n\n不过，现有材料未提供 NeurIPS 官方 2020 年奖项页面或完整获奖名单，因而无法仅凭现有来源独立核实该论文被 NeurIPS 官方正式列入 Outstanding Paper Award 获奖论文名单。[S19][S24][S28][S40]\n\n## 详细分析\n\n1. GPT-3 论文的正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1][S4] 现有材料分别以“GPT-v3: Language Models are Few-Shot Learners”和“Language Models are Few-Shot Learners (GPT-3)”指称该论文。[S1][S4]\n\n2. 该论文被引用为发表于或收录于 NeurIPS 2020 的论文。[S22][S42] 但论文收录于 NeurIPS 2020 仅能说明其会议发表信息，不能单独证明其获得会议奖项。[S22][S42]\n\n3. 现有材料中有来源将该论文直接标注为 **“NeurIPS 2020 Outstanding Paper”**。[S4] 因此，在将中文“最佳论文奖”作为对 NeurIPS 杰出论文奖项的概括性表述时，可回答其获奖年份为 **2020 年**。[S4]\n\n4. “Outstanding Paper Award”是应与中文“最佳论文奖”加以区分的正式英文奖项表述；现有来源片段未包含 NeurIPS 官方 2020 年奖项页面或官方获奖论文名单。[S19][S24][S28][S40] 因此，2020 年这一回答依据现有的“NeurIPS 2020 Outstanding Paper”标注得出，但该标注尚未得到现有材料中的 NeurIPS 官方获奖记录独立验证。[S4][S19][S24][S28][S40]"
+    }
+  },
+  "runs": {
+    "react": {
+      "question": "GPT-3 论文的英文标题是什么？它获得了哪一年 NeurIPS 的最佳论文奖？",
+      "standalone_question": "GPT-3 论文的英文标题是什么？它获得了哪一年 NeurIPS 的最佳论文奖？",
+      "plan_rationale": "",
+      "findings": [
+        {
+          "question": "GPT-3 论文的英文标题是什么？它获得了哪一年 NeurIPS 的最佳论文奖？",
+          "answer": "GPT-3 论文的英文标题是 **“Language Models are Few-Shot Learners”**；它发表于 NeurIPS 2020。[S14][S17]\n\n不过，现有可靠信息**不能证实该论文获得过 NeurIPS 最佳论文奖**。因此没有可确认的获奖年份；题目可能将“发表于 NeurIPS 2020”误写成“获得 NeurIPS 最佳论文奖”。[S14][S17]",
+          "steps": [
+            {
+              "thought": "需要核实GPT-3论文标题与NeurIPS最佳论文奖年份；先检索官方论文及NeurIPS获奖记录。",
+              "action": "web_search",
+              "action_input": {
+                "query": "GPT-3 paper title NeurIPS best paper award year"
+              },
+              "observation": "[S1] Printz Award | Association for Library Service to Children | https://www.ala.org/alsc/awardsgrants/bookmedia/printz-award\nPrintz Award recognizes the best titles in young adult literature in a given calendar year. Purpose The award will: Recognize the best in the field of ...\n\n[S2] Awwwards - W",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5"
+              ]
+            },
+            {
+              "thought": "搜索结果未提供有效依据。需要直接检索GPT-3论文及NeurIPS 2020最佳论文记录，以确认提问中的前提是否成立。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:neurips.cc 2020 best paper award Learning to Simulate GPT-3"
+              },
+              "observation": "[S6] National Results 2020 President Exit Polls | https://www.cnn.com/election/2020/exit-polls/president/national-results\nView National Results President exit polls for the 2020 US elections. For official voting results, visit cnn.com/election.\n\n[S7] Foreign Threats to the 2020 US Federal Elections ",
+              "source_ids": [
+                "S6",
+                "S7",
+                "S8",
+                "S9",
+                "S10"
+              ]
+            },
+            {
+              "thought": "前两次网页检索均无关。改用百科检索确认GPT-3条目中的论文标题与发表信息，再核对NeurIPS奖项前提。",
+              "action": "wiki_search",
+              "action_input": {
+                "query": "GPT-3",
+                "lang": "en"
+              },
+              "observation": "[S11] GPT-3 | https://en.wikipedia.org/wiki/GPT-3\nGenerative Pre-trained Transformer 3 (GPT-3) was a large language model released by OpenAI in 2020 as part of the company's GPT series of models.\nLike its predecessor, GPT-2, it is a decoder-only transformer model of deep neural network, which supers",
+              "source_ids": [
+                "S11",
+                "S12",
+                "S13"
+              ]
+            },
+            {
+              "thought": "需要从论文原文和NeurIPS官方获奖名单分别核验标题与奖项归属，避免将“发表于NeurIPS”误作“获得最佳论文奖”。",
+              "action": "web_search",
+              "action_input": {
+                "query": "\"Language Models are Few-Shot Learners\" NeurIPS 2020 best paper award"
+              },
+              "observation": "[S14] Generating Training Data with Language Models | https://arxiv.org/html/2202.04538v2\nLanguage models are few-shot learners. In NeurIPS, 2020. [6] Alvin Chan, Y. Ong, Bill Tuck Weng Pung, Aston Zhang, and Jie Fu. CoCon: A self ...\n\n[S15] UMBC CMSC 671 Principles of Artificial Intelligence | http",
+              "source_ids": [
+                "S14",
+                "S15",
+                "S16",
+                "S17",
+                "S18"
+              ]
+            },
+            {
+              "thought": "检索结果显示GPT-3论文为《Language Models are Few-Shot Learners》，并发表于NeurIPS 2020；但关于其获奖的唯一结果是课程网页的说法，仍需查找NeurIPS官方2020奖项名单以判断该说法是否属实。",
+              "action": "web_search",
+              "action_input": {
+                "query": "NeurIPS 2020 awards Best Paper \"Learning to Simulate\""
+              },
+              "observation": "[S19] NeurIPS 2019 Paper Review - Quantitative Researcher | https://www.gresearch.com/news/neurips-2019-paper-review/\nIn this paper the authors show how a recently developed Bayesian variational method can be used to perform practical deep learning that is ...\n\n[S20] NeurIPS papers aim to improve un",
+              "source_ids": [
+                "S19",
+                "S20",
+                "S21",
+                "S22",
+                "S23"
+              ]
+            }
+          ],
+          "finished": true
+        }
+      ],
+      "followups": [],
+      "critique": null,
+      "verification": null,
+      "report": "GPT-3 论文的英文标题是 **“Language Models are Few-Shot Learners”**；它发表于 NeurIPS 2020。[S14][S17]\n\n不过，现有可靠信息**不能证实该论文获得过 NeurIPS 最佳论文奖**。因此没有可确认的获奖年份；题目可能将“发表于 NeurIPS 2020”误写成“获得 NeurIPS 最佳论文奖”。[S14][S17]\n\n## 参考来源\n- [S14] Generating Training Data with Language Models — https://arxiv.org/html/2202.04538v2\n- [S17] FreshLLMs: Refreshing Large Language Models with ... — https://www.alphaxiv.org/abs/2310.03214",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "web_search",
+          "title": "Printz Award | Association for Library Service to Children",
+          "url": "https://www.ala.org/alsc/awardsgrants/bookmedia/printz-award",
+          "content": "Printz Award recognizes the best titles in young adult literature in a given calendar year. Purpose The award will: Recognize the best in the field of ...",
+          "query": "GPT-3 paper title NeurIPS best paper award year"
+        },
+        {
+          "id": "S2",
+          "tool": "web_search",
+          "title": "Awwwards - Website Awards - Best Web Design Trends",
+          "url": "https://www.awwwards.com/",
+          "content": "Awwwards are the Website Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the world.",
+          "query": "GPT-3 paper title NeurIPS best paper award year"
+        },
+        {
+          "id": "S3",
+          "tool": "web_search",
+          "title": "Auditor of State Awards",
+          "url": "https://ohioauditor.gov/awards.html",
+          "content": "Auditor of State Award with Distinction. Eligible entities that receive this award meet the following criteria of a “clean” audit report:.",
+          "query": "GPT-3 paper title NeurIPS best paper award year"
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "Milken Educator Awards",
+          "url": "https://www.milkeneducatorawards.org/",
+          "content": "Established by Lowell Milken in 1987 to celebrate and empower outstanding educators, the Milken Educator Awards is the premiere teacher recognition and ...",
+          "query": "GPT-3 paper title NeurIPS best paper award year"
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "Damon Runyon-Rachleff Innovation Award Overview",
+          "url": "https://www.damonrunyon.org/for-scientists/application-guidelines/innovation",
+          "content": "The Stage 1 award will be for two years, $200,000 per year ($400,000 total) with the opportunity for up to two additional years of funding (up to four years ...",
+          "query": "GPT-3 paper title NeurIPS best paper award year"
+        },
+        {
+          "id": "S6",
+          "tool": "web_search",
+          "title": "National Results 2020 President Exit Polls",
+          "url": "https://www.cnn.com/election/2020/exit-polls/president/national-results",
+          "content": "View National Results President exit polls for the 2020 US elections. For official voting results, visit cnn.com/election.",
+          "query": "site:neurips.cc 2020 best paper award Learning to Simulate GPT-3"
+        },
+        {
+          "id": "S7",
+          "tool": "web_search",
+          "title": "Foreign Threats to the 2020 US Federal Elections",
+          "url": "https://archive.dni.gov/files/ODNI/documents/assessments/ICA-declass-16MAR21.pdf",
+          "content": "This document is a declassified version of a classified report that the Intelligence Community provided to the President,.",
+          "query": "site:neurips.cc 2020 best paper award Learning to Simulate GPT-3"
+        },
+        {
+          "id": "S8",
+          "tool": "web_search",
+          "title": "Suuns - \"2020\" (Official Video)",
+          "url": "https://www.youtube.com/watch?v=oQgicu6G6n8",
+          "content": "My ex husband hated this song and always asked me to turn it off. Now I'm divorced and blasting it whenever I want. 3:50.",
+          "query": "site:neurips.cc 2020 best paper award Learning to Simulate GPT-3"
+        },
+        {
+          "id": "S9",
+          "tool": "web_search",
+          "title": "2020 Greater Los Angeles Homeless Count Results",
+          "url": "https://www.lahsa.org/news?article=726-2020-greater-los-angeles-homeless-count-results",
+          "content": "Data summaries below. 2020 GREATER LOS ANGELES HOMELESS COUNT SHOWS 12.7% RISE IN HOMELESSNESS DESPITE SUSTAINED INCREASE IN NUMBER OF ...",
+          "query": "site:neurips.cc 2020 best paper award Learning to Simulate GPT-3"
+        },
+        {
+          "id": "S10",
+          "tool": "web_search",
+          "title": "Natalie Harp at 2020 Republican National Convention",
+          "url": "https://www.youtube.com/watch?v=AijwZbXYq1g",
+          "content": "Sen. Jon Ossoff (D-GA) mentioned White House aide Natalie Harp during a rally in Atlanta on Sunday, setting off a media firestorm.",
+          "query": "site:neurips.cc 2020 best paper award Learning to Simulate GPT-3"
+        },
+        {
+          "id": "S11",
+          "tool": "wiki_search",
+          "title": "GPT-3",
+          "url": "https://en.wikipedia.org/wiki/GPT-3",
+          "content": "Generative Pre-trained Transformer 3 (GPT-3) was a large language model released by OpenAI in 2020 as part of the company's GPT series of models.\nLike its predecessor, GPT-2, it is a decoder-only transformer model of deep neural network, which supersedes recurrence and convolution-based architecture",
+          "query": "GPT-3"
+        },
+        {
+          "id": "S12",
+          "tool": "wiki_search",
+          "title": "Generative pre-trained transformer",
+          "url": "https://en.wikipedia.org/wiki/Generative_pre-trained_transformer",
+          "content": "A generative pre-trained transformer (GPT) is a type of large language model (LLM) that is widely used in generative artificial intelligence chatbots. GPTs are based on a deep learning architecture called the transformer. They are pre-trained on large datasets of unlabeled content, and able to gener",
+          "query": "GPT-3"
+        },
+        {
+          "id": "S13",
+          "tool": "wiki_search",
+          "title": "GPT-4o",
+          "url": "https://en.wikipedia.org/wiki/GPT-4o",
+          "content": "GPT-4o (\"o\" for \"omni\") is a multilingual, multimodal generative pre-trained transformer developed by OpenAI and released in May 2024 as part of its GPT series of models. It can process and generate text, images and audio.\nUpon release, GPT-4o was free in ChatGPT, though paid subscribers had higher ",
+          "query": "GPT-3"
+        },
+        {
+          "id": "S14",
+          "tool": "web_search",
+          "title": "Generating Training Data with Language Models",
+          "url": "https://arxiv.org/html/2202.04538v2",
+          "content": "Language models are few-shot learners. In NeurIPS, 2020. [6] Alvin Chan, Y. Ong, Bill Tuck Weng Pung, Aston Zhang, and Jie Fu. CoCon: A self ...",
+          "query": "\"Language Models are Few-Shot Learners\" NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S15",
+          "tool": "web_search",
+          "title": "UMBC CMSC 671 Principles of Artificial Intelligence",
+          "url": "https://courses.cs.umbc.edu/undergraduate/471/spring21/02/hw/EX1/",
+          "content": "A paper on GPT-3, Language Models are Few-Shot Learners, received a best-paper award from the prestigious NeurIPS conference just last week. There are many ...",
+          "query": "\"Language Models are Few-Shot Learners\" NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S16",
+          "tool": "web_search",
+          "title": "Prototypical Calibration for Few-shot Learning of Language Models",
+          "url": "https://www.researchgate.net/publication/360781948_Prototypical_Calibration_for_Few-shot_Learning_of_Language_Models",
+          "content": "Conference Paper. Jan 2023 ... This paper has been presented with the Best Paper Award. ... Language models are few-shot learners. In NeurIPS 2020, 2020.",
+          "query": "\"Language Models are Few-Shot Learners\" NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S17",
+          "tool": "web_search",
+          "title": "FreshLLMs: Refreshing Large Language Models with ...",
+          "url": "https://www.alphaxiv.org/abs/2310.03214",
+          "content": "Language models are few-shot learners. In Advances in Neural Information Processing Systems (NeurIPS), volume 33, pp. 1877–1901, 2020. URL https ...",
+          "query": "\"Language Models are Few-Shot Learners\" NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S18",
+          "tool": "web_search",
+          "title": "Zero- and Few-Shot Learning in NLP",
+          "url": "https://www.scribd.com/document/926987781/2022-acl-tutorials-6",
+          "content": "2020. Language models are few-shot learners. In Ad- data points is a prompt worth? In Proceedings of vances in Neural Information Processing ...",
+          "query": "\"Language Models are Few-Shot Learners\" NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S19",
+          "tool": "web_search",
+          "title": "NeurIPS 2019 Paper Review - Quantitative Researcher",
+          "url": "https://www.gresearch.com/news/neurips-2019-paper-review/",
+          "content": "In this paper the authors show how a recently developed Bayesian variational method can be used to perform practical deep learning that is ...",
+          "query": "NeurIPS 2020 awards Best Paper \"Learning to Simulate\""
+        },
+        {
+          "id": "S20",
+          "tool": "web_search",
+          "title": "NeurIPS papers aim to improve understanding and ...",
+          "url": "https://www.miragenews.com/neurips-papers-aim-to-improve-understanding-and-robustness-of-machine-learning-algorithms/",
+          "content": "NeurIPS papers aim to improve understanding and robustness of machine learning algorithms · Guaranteeing robustness in deep learning neural ...",
+          "query": "NeurIPS 2020 awards Best Paper \"Learning to Simulate\""
+        },
+        {
+          "id": "S21",
+          "tool": "web_search",
+          "title": "NeurIPS2020 - Singapore's Entries at the Top Machine ...",
+          "url": "https://news.machinelearning.sg/posts/neurips2020_singapores_entries_at_the_top_machine_learning_conference_this_year/",
+          "content": "tl;dr NeurIPS is the largest and argubably the most prestigious machine learning research conference internationally.",
+          "query": "NeurIPS 2020 awards Best Paper \"Learning to Simulate\""
+        },
+        {
+          "id": "S22",
+          "tool": "web_search",
+          "title": "NeurIPs Paper Reviews 2023 #4",
+          "url": "https://www.gresearch.com/news/neurips-paper-reviews-2023-4/",
+          "content": "Explore our insights from NeurIPs 2023, featuring research highlights by our quantitative experts on neural networks and machine learning advancements.",
+          "query": "NeurIPS 2020 awards Best Paper \"Learning to Simulate\""
+        },
+        {
+          "id": "S23",
+          "tool": "web_search",
+          "title": "Computational Physics Dec 2020",
+          "url": "https://arxiv.org/list/physics.comp-ph/2020-12",
+          "content": "... (NeurIPS 2020). Subjects: Data Analysis, Statistics and Probability (physics.data-an); Machine Learning (cs.LG); High Energy Physics - Experiment (hep-ex); ...",
+          "query": "NeurIPS 2020 awards Best Paper \"Learning to Simulate\""
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "react",
+          "report": "GPT-3 论文的英文标题是 **“Language Models are Few-Shot Learners”**；它发表于 NeurIPS 2020。[S14][S17]\n\n不过，现有可靠信息**不能证实该论文获得过 NeurIPS 最佳论文奖**。因此没有可确认的获奖年份；题目可能将“发表于 NeurIPS 2020”误写成“获得 NeurIPS 最佳论文奖”。[S14][S17]",
+          "seconds": 22.38,
+          "llm_calls": 6,
+          "total_tokens": 11252,
+          "tool_calls": 5
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 6,
+          "prompt_tokens": 10388,
+          "completion_tokens": 864,
+          "seconds": 12.483188792015426,
+          "total_tokens": 11252
+        },
+        "stages": {
+          "execute": {
+            "calls": 6,
+            "prompt_tokens": 10388,
+            "completion_tokens": 864,
+            "seconds": 12.483188792015426,
+            "total_tokens": 11252
+          }
+        }
+      },
+      "seconds": 22.38,
+      "tool_calls": 5
+    },
+    "full": {
+      "question": "GPT-3 论文的英文标题是什么？它获得了哪一年 NeurIPS 的最佳论文奖？",
+      "standalone_question": "GPT-3 论文的英文标题是什么？它获得了哪一年 NeurIPS 的最佳论文奖？",
+      "plan_rationale": "先检索并确认 GPT-3 论文的正式英文标题，再核实该论文是否以及在哪一届 NeurIPS 获得最佳论文奖。",
+      "findings": [
+        {
+          "question": "GPT-3 的原始论文正式英文标题是什么？",
+          "answer": "GPT-3 的原始论文正式英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]",
+          "steps": [
+            {
+              "thought": "需要核实GPT-3原始论文的正式英文标题，优先检索论文原始页面。",
+              "action": "web_search",
+              "action_input": {
+                "query": "GPT-3 original paper title arXiv 2020"
+              },
+              "observation": "[S1] L19.5.2.5 GPT-v3: Language Models are Few-Shot Learners | https://www.youtube.com/watch?v=wYdKn-X4MhY\nComments · L19. · What Is Jev? · GPT-3: Language Models are Few-Shot Learners (Paper Explained) · Every Machine Learning Model Explained in 15 ...\n\n[S2] https://scholar.google.com/citations?vie",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5"
+              ]
+            }
+          ],
+          "finished": true
+        },
+        {
+          "question": "上一步找到的 GPT-3 论文是否获得过 NeurIPS 最佳论文奖；如获得，获奖的是哪一年？",
+          "answer": "无法根据现有证据确认 GPT-3 原始论文《Language Models are Few-Shot Learners》是否获得过 NeurIPS 最佳论文奖，因而也无法确认获奖年份。已知该论文的正式英文标题为“Language Models are Few-Shot Learners”。[S1][S4] 此前针对 NeurIPS 最佳论文的检索未获得相关官方获奖记录：一次搜索超时，另一次维基检索返回的结果与问题无关。[S11][S12][S13]",
+          "steps": [
+            {
+              "thought": "需要核实《Language Models are Few-Shot Learners》是否获得 NeurIPS 最佳论文奖及年份，优先检索 NeurIPS 官方获奖记录。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:neurips.cc \"Language Models are Few-Shot Learners\" \"Best Paper\"",
+                "num_results": 5
+              },
+              "observation": "[S6] Efficient Training of Language Models using Few-Shot ... | https://research.google/pubs/efficient-training-of-language-models-using-few-shot-learning/\nWe show that, by leveraging the fast learning nature of few-shot learners, one can train language models efficiently in a stagewise manner. Our ",
+              "source_ids": [
+                "S6",
+                "S7",
+                "S8",
+                "S9",
+                "S10"
+              ]
+            },
+            {
+              "thought": "前次检索没有得到官方获奖记录，需直接检索 NeurIPS 2020 的最佳论文获奖名单，以确认该论文是否在列。",
+              "action": "web_search",
+              "action_input": {
+                "query": "NeurIPS 2020 best paper award winners official",
+                "num_results": 10
+              },
+              "observation": "工具调用失败：TimeoutError: SerpApi 搜索超时，请稍后重试或改用 wiki_search",
+              "source_ids": []
+            },
+            {
+              "thought": "搜索工具超时，改用维基百科检索 NeurIPS 会议及其 2020 年最佳论文奖记录；同时需避免把论文入选 NeurIPS 与获最佳论文混淆。",
+              "action": "wiki_search",
+              "action_input": {
+                "query": "NeurIPS 2020 best paper award",
+                "lang": "en"
+              },
+              "observation": "[S11] International Conference on Machine Learning | https://en.wikipedia.org/wiki/International_Conference_on_Machine_Learning\nThe International Conference on Machine Learning (ICML) is an international academic conference in machine learning held annually since 1980. It is the oldest and, along wi",
+              "source_ids": [
+                "S11",
+                "S12",
+                "S13"
+              ]
+            },
+            {
+              "thought": "维基检索未返回相关条目，且此前网页检索超时；改用更精确的关键词检索获奖论文标题，以交叉核对 GPT-3 论文是否为获奖论文。",
+              "action": "web_search",
+              "action_input": {
+                "query": "NeurIPS 2020 Best Paper Award \"A Simple Framework for Contrastive Learning of Visual Representations\"",
+                "num_results": 5
+              },
+              "observation": "[S14] Superficial White Matter Analysis: An Efficient Point-cloud- ... | https://arxiv.org/html/2207.08975v3\n[2020] Chen, T., Kornblith, S., Norouzi, M., Hinton, G., 2020. A simple framework for contrastive learning of visual representations, in: Iii, H.D., Singh, A.\n\n[S15] Watchog: A Light-weight C",
+              "source_ids": [
+                "S14",
+                "S15",
+                "S16",
+                "S17",
+                "S18"
+              ]
+            }
+          ],
+          "finished": false
+        }
+      ],
+      "followups": [
+        {
+          "question": "NeurIPS 官方 2020 年奖项页面中，《Language Models are Few-Shot Learners》是否被列为 Outstanding Paper Award 获奖论文？",
+          "answer": "无法确认。现有 Observation 中没有找到 NeurIPS 官方 2020 年奖项页面或 Outstanding Paper Award 获奖论文名单，因此不能证实《Language Models are Few-Shot Learners》被列为该奖项获奖论文。[S19][S24][S28][S40] 已知该论文的正式标题确为《Language Models are Few-Shot Learners》，且其被引用为收录于 NeurIPS 2020 的论文，但“收录于会议”不等于“获得 Outstanding Paper Award”。[S1][S4][S22][S42]",
+          "steps": [
+            {
+              "thought": "需要核实 NeurIPS 官方 2020 年奖项页面的获奖论文名单，并将其与已知的 GPT-3 论文标题比对。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:neurips.cc 2020 awards Outstanding Paper Award \"Language Models are Few-Shot Learners\"",
+                "num_results": 5
+              },
+              "observation": "[S19] Superposed Decoding: Multiple Generations from a Single ... | https://neurips.cc/virtual/2024/poster/95663\nLanguage models are few-shot learners, 2020. [5] T. Cai, Y. Li, Z. Geng, H. Peng, J. D. Lee, D. Chen, and T. Dao. Medusa: Simple llm inference acceleration ...\n\n[S20] NeurIPS Poster Visua",
+              "source_ids": [
+                "S19",
+                "S20",
+                "S21",
+                "S22",
+                "S23"
+              ]
+            },
+            {
+              "thought": "首次检索未命中官方奖项页，只得到后来论文的参考文献。改用 NeurIPS 2020 官方奖项页的可能标题和站内路径进行检索。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:neurips.cc \"2020 Outstanding Paper Awards\"",
+                "num_results": 10
+              },
+              "observation": "[S24] Organizers - NeurIPS 2022 | https://neurips.cc/virtual/2022/organizers\nOutstanding Paper Awards · Workshops; Community. Affinity Events · Socials ... Award in 2013, and five Outstanding Teaching Awards between 2016 and 2020.\n\n[S25] Neuro-Logic and Differentiable Controls (Yejin Choi) | https:/",
+              "source_ids": [
+                "S24",
+                "S25",
+                "S26",
+                "S27",
+                "S28",
+                "S29",
+                "S30",
+                "S31"
+              ]
+            },
+            {
+              "thought": "站内搜索未找到页面，改以精确措辞搜索网页和官方新闻公告，核对 2020 年 Outstanding Paper Award 的论文题目。",
+              "action": "web_search",
+              "action_input": {
+                "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official",
+                "num_results": 10
+              },
+              "observation": "[S32] Conferences Best Paper Awards 2020 | https://www.acm.org/conferences/best-paper-awards-2020\nBest Paper Awards are presented at many ACM conferences to authors whose work represents groundbreaking research in their respective areas.\n\n[S33] [N] ICML 2020 Announces Outstanding Paper Awards | http",
+              "source_ids": [
+                "S32",
+                "S33",
+                "S34",
+                "S35",
+                "S36",
+                "S37",
+                "S38",
+                "S39"
+              ]
+            },
+            {
+              "thought": "常规搜索仍未返回 2020 官方奖项页面。下一步用论文标题与 NeurIPS 奖项措辞交叉检索，以确认是否存在官方或可靠的直接关联。",
+              "action": "web_search",
+              "action_input": {
+                "query": "\"Language Models are Few-Shot Learners\" \"Outstanding Paper Award\"",
+                "num_results": 10
+              },
+              "observation": "[S40] Language Models are Few-Shot Learners | https://scispace.com/papers/language-models-are-few-shot-learners-2hr23olfy0\nLanguage Models are Few-Shot Learners ... TL;DR: This article showed that scaling up language models greatly improves task-agnostic, few-shot performance, ...\n\n[S9] Language Mod",
+              "source_ids": [
+                "S40",
+                "S9",
+                "S41",
+                "S42",
+                "S7",
+                "S43",
+                "S44",
+                "S45"
+              ]
+            }
+          ],
+          "finished": false
+        }
+      ],
+      "critique": {
+        "score": 4,
+        "issues": [
+          "完整性不足：报告没有给出研究问题第二部分所要求的获奖年份，而是以“无法确认”结束，未形成完整答案。",
+          "关键事实判断有误或至少与已知公开记录不符：GPT-3 论文《Language Models are Few-Shot Learners》获得的是 NeurIPS 2020 Outstanding Paper Award；在问题将其表述为“最佳论文奖”的语境下，应回答年份为 2020 年。",
+          "推理链存在不当的证据标准：报告承认材料中出现“NeurIPS 2020 Outstanding Paper”，却仅因未能从现有片段确认其与“最佳论文奖”的措辞对应，便推导出不能确认获奖事实。应核对 NeurIPS 官方奖项记录，并区分正式奖项名称“Outstanding Paper Award”与中文问题中的概括性称呼。",
+          "第一部分标题结论基本准确，且采用先结论后分析的结构，表达较清晰；但第二部分错误/缺失使整体结论不能准确回答研究问题。"
+        ],
+        "follow_up_questions": [
+          "NeurIPS 官方 2020 年奖项页面中，《Language Models are Few-Shot Learners》是否被列为 Outstanding Paper Award 获奖论文？"
+        ],
+        "needs_revision": true
+      },
+      "verification": {
+        "stats": {
+          "claims": 9,
+          "supported": 8,
+          "partial": 1,
+          "unsupported": 0,
+          "removed": 0,
+          "fabricated_citations": 0,
+          "support_rate": 0.9444,
+          "hallucination_rate": 0.0
+        },
+        "checks": [
+          {
+            "id": 1,
+            "text": "GPT-3 对应论文的英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]",
+            "citations": [
+              "S1",
+              "S4"
+            ],
+            "label": "supported",
+            "reason": "S1、S4均出现该英文标题"
+          },
+          {
+            "id": 2,
+            "text": "现有材料将该论文标注为 **“NeurIPS 2020 Outstanding Paper”**；因此，若将问题中的“最佳论文奖”概括性地指代 NeurIPS 的 **Outstanding Paper Award**，其对应年份为 **2020 年**。[S4]",
+            "citations": [
+              "S4"
+            ],
+            "label": "supported",
+            "reason": "S4直接标注“NeurIPS 2020 Outstanding Paper”"
+          },
+          {
+            "id": 3,
+            "text": "不过，现有材料未提供 NeurIPS 官方 2020 年奖项页面或完整获奖名单，因而无法仅凭现有来源独立核实该论文被 NeurIPS 官方正式列入 Outstanding Paper Award 获奖论文名单。[S19][S24][S28][S40]",
+            "citations": [
+              "S19",
+              "S24",
+              "S28",
+              "S40"
+            ],
+            "label": "not_claim",
+            "reason": "属于对现有来源核实限度的说明"
+          },
+          {
+            "id": 4,
+            "text": "GPT-3 论文的正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1][S4]",
+            "citations": [
+              "S1",
+              "S4"
+            ],
+            "label": "supported",
+            "reason": "S1、S4均列出该正式标题"
+          },
+          {
+            "id": 5,
+            "text": "现有材料分别以“GPT-v3: Language Models are Few-Shot Learners”和“Language Models are Few-Shot Learners (GPT-3)”指称该论文。[S1][S4]",
+            "citations": [
+              "S1",
+              "S4"
+            ],
+            "label": "supported",
+            "reason": "S1、S4分别使用所述两种标题"
+          },
+          {
+            "id": 6,
+            "text": "该论文被引用为发表于或收录于 NeurIPS 2020 的论文。[S22][S42]",
+            "citations": [
+              "S22",
+              "S42"
+            ],
+            "label": "supported",
+            "reason": "S22给出2020会议引文，S42注明NeurIPS"
+          },
+          {
+            "id": 7,
+            "text": "但论文收录于 NeurIPS 2020 仅能说明其会议发表信息，不能单独证明其获得会议奖项。[S22][S42]",
+            "citations": [
+              "S22",
+              "S42"
+            ],
+            "label": "not_claim",
+            "reason": "属于发表信息不足以证明奖项的核查说明"
+          },
+          {
+            "id": 8,
+            "text": "现有材料中有来源将该论文直接标注为 **“NeurIPS 2020 Outstanding Paper”**。[S4]",
+            "citations": [
+              "S4"
+            ],
+            "label": "supported",
+            "reason": "S4标题直接作此标注"
+          },
+          {
+            "id": 9,
+            "text": "因此，在将中文“最佳论文奖”作为对 NeurIPS 杰出论文奖项的概括性表述时，可回答其获奖年份为 **2020 年**。[S4]",
+            "citations": [
+              "S4"
+            ],
+            "label": "supported",
+            "reason": "S4标题明确标注NeurIPS 2020 Outstanding Paper"
+          },
+          {
+            "id": 10,
+            "text": "“Outstanding Paper Award”是应与中文“最佳论文奖”加以区分的正式英文奖项表述；现有来源片段未包含 NeurIPS 官方 2020 年奖项页面或官方获奖论文名单。[S19][S24][S28][S40]",
+            "citations": [
+              "S19",
+              "S24",
+              "S28",
+              "S40"
+            ],
+            "label": "partial",
+            "reason": "S24有奖项名称，但未证实正式表述及区分"
+          },
+          {
+            "id": 11,
+            "text": "因此，2020 年这一回答依据现有的“NeurIPS 2020 Outstanding Paper”标注得出，但该标注尚未得到现有材料中的 NeurIPS 官方获奖记录独立验证。[S4][S19][S24][S28][S40]",
+            "citations": [
+              "S4",
+              "S19",
+              "S24",
+              "S28",
+              "S40"
+            ],
+            "label": "supported",
+            "reason": "S4有2020标注，其他片段无官方获奖记录"
+          }
+        ],
+        "removed": [],
+        "fabricated_citations": []
+      },
+      "report": "## 结论\n\nGPT-3 对应论文的英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]  \n\n现有材料将该论文标注为 **“NeurIPS 2020 Outstanding Paper”**；因此，若将问题中的“最佳论文奖”概括性地指代 NeurIPS 的 **Outstanding Paper Award**，其对应年份为 **2020 年**。[S4]  \n\n不过，现有材料未提供 NeurIPS 官方 2020 年奖项页面或完整获奖名单，因而无法仅凭现有来源独立核实该论文被 NeurIPS 官方正式列入 Outstanding Paper Award 获奖论文名单。[S19][S24][S28][S40]\n\n## 详细分析\n\n1. GPT-3 论文的正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1][S4] 现有材料分别以“GPT-v3: Language Models are Few-Shot Learners”和“Language Models are Few-Shot Learners (GPT-3)”指称该论文。[S1][S4]\n\n2. 该论文被引用为发表于或收录于 NeurIPS 2020 的论文。[S22][S42] 但论文收录于 NeurIPS 2020 仅能说明其会议发表信息，不能单独证明其获得会议奖项。[S22][S42]\n\n3. 现有材料中有来源将该论文直接标注为 **“NeurIPS 2020 Outstanding Paper”**。[S4] 因此，在将中文“最佳论文奖”作为对 NeurIPS 杰出论文奖项的概括性表述时，可回答其获奖年份为 **2020 年**。[S4]\n\n4. “Outstanding Paper Award”是应与中文“最佳论文奖”加以区分的正式英文奖项表述；现有来源片段未包含 NeurIPS 官方 2020 年奖项页面或官方获奖论文名单。[S19][S24][S28][S40] 因此，2020 年这一回答依据现有的“NeurIPS 2020 Outstanding Paper”标注得出，但该标注尚未得到现有材料中的 NeurIPS 官方获奖记录独立验证。[S4][S19][S24][S28][S40]\n\n## 参考来源\n- [S1] L19.5.2.5 GPT-v3: Language Models are Few-Shot Learners — https://www.youtube.com/watch?v=wYdKn-X4MhY\n- [S4] 【NeurIPS 2020 Outstanding Paper】Language Models are Few- ... — https://www.youtube.com/watch?v=JmJlmPh2dC8\n- [S19] Superposed Decoding: Multiple Generations from a Single ... — https://neurips.cc/virtual/2024/poster/95663\n- [S24] Organizers - NeurIPS 2022 — https://neurips.cc/virtual/2022/organizers\n- [S28] Almost Linear Time k-Medoids Clustering via Multi-Armed ... — https://proceedings.neurips.cc/paper/2020/file/73b817090081cef1bca77232f4532c5d-Review.html\n- [S40] Language Models are Few-Shot Learners — https://scispace.com/papers/language-models-are-few-shot-learners-2hr23olfy0\n- [S22] Towards Provable Emergence of In-Context Reinforcement ... — https://papers.neurips.cc/paper_files/paper/2025/file/24e07a062e1043fbf360c6933ad201da-Paper-Conference.pdf\n- [S42] Making Pre-trained Language Models Better Few-shot ... — https://www.researchgate.net/publication/348079402_Making_Pre-trained_Language_Models_Better_Few-shot_Learners",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "web_search",
+          "title": "L19.5.2.5 GPT-v3: Language Models are Few-Shot Learners",
+          "url": "https://www.youtube.com/watch?v=wYdKn-X4MhY",
+          "content": "Comments · L19. · What Is Jev? · GPT-3: Language Models are Few-Shot Learners (Paper Explained) · Every Machine Learning Model Explained in 15 ...",
+          "query": "GPT-3 original paper title arXiv 2020"
+        },
+        {
+          "id": "S2",
+          "tool": "web_search",
+          "title": "https://scholar.google.com/citations?view_op=view_...",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=astFxkwAAAAJ&citation_for_view=astFxkwAAAAJ:UeHWp8X0CEIC",
+          "content": "没有此网页的信息。",
+          "query": "GPT-3 original paper title arXiv 2020"
+        },
+        {
+          "id": "S3",
+          "tool": "web_search",
+          "title": "Making pre-trained language models better few-shot learners",
+          "url": "https://collaborate.princeton.edu/en/publications/making-pre-trained-language-models-better-few-shot-learners/",
+          "content": "The recent GPT-3 model (Brown et al., 2020) achieves remarkable few-shot performance solely by leveraging a natural-language prompt and a few task ...",
+          "query": "GPT-3 original paper title arXiv 2020"
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "【NeurIPS 2020 Outstanding Paper】Language Models are Few- ...",
+          "url": "https://www.youtube.com/watch?v=JmJlmPh2dC8",
+          "content": "【NeurIPS 2020 Outstanding Paper】Language Models are Few-Shot Learners (GPT-3) · Comments.",
+          "query": "GPT-3 original paper title arXiv 2020"
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "machine-learning-papers-summary/nlp/GPT3.md at master",
+          "url": "https://github.com/GitYCC/machine-learning-papers-summary/blob/master/nlp/GPT3.md",
+          "content": "GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the ...",
+          "query": "GPT-3 original paper title arXiv 2020"
+        },
+        {
+          "id": "S6",
+          "tool": "web_search",
+          "title": "Efficient Training of Language Models using Few-Shot ...",
+          "url": "https://research.google/pubs/efficient-training-of-language-models-using-few-shot-learning/",
+          "content": "We show that, by leveraging the fast learning nature of few-shot learners, one can train language models efficiently in a stagewise manner. Our main insight is ...",
+          "query": "site:neurips.cc \"Language Models are Few-Shot Learners\" \"Best Paper\""
+        },
+        {
+          "id": "S7",
+          "tool": "web_search",
+          "title": "Language Models are Few-Shot Butlers",
+          "url": "https://aclanthology.org/2021.emnlp-main.734.pdf",
+          "content": "Language models are few-shot learners. In. Advances in Neural Information Processing Systems, volume 33, pages 1877–1901. Curran Associates ...",
+          "query": "site:neurips.cc \"Language Models are Few-Shot Learners\" \"Best Paper\""
+        },
+        {
+          "id": "S8",
+          "tool": "web_search",
+          "title": "Language Models Are Few Shot Learners",
+          "url": "https://publicreg.vaccination.gov.ng/virtual-library/6nsrBt/0S9005/language-models-are__few_shot-learners.pdf",
+          "content": "Understanding language models are few shot learners, a fact that has revolutionized the way artificial intelligence interacts with human language and tackles.",
+          "query": "site:neurips.cc \"Language Models are Few-Shot Learners\" \"Best Paper\""
+        },
+        {
+          "id": "S9",
+          "tool": "web_search",
+          "title": "Language Models are Few-Shot Learners",
+          "url": "https://hjfy.top/arxiv/2005.14165",
+          "content": "打开缩放选项. 自动. / 0. 原文. 翻译. 分屏. 更多操作. 页面缩略图. 文档大纲. 附件. 文档属性. 文件名: N/A. 文件大小: N/A. 标题: N/A. 作者: N/A. 主题: N/A.",
+          "query": "site:neurips.cc \"Language Models are Few-Shot Learners\" \"Best Paper\""
+        },
+        {
+          "id": "S10",
+          "tool": "web_search",
+          "title": "Language Models Are Few Shot Learners",
+          "url": "https://publicreg.vaccination.gov.ng/virtual-library/6nsrBt/0S9005/language__models-are-few_shot_learners.pdf",
+          "content": "In summary, language models are few-shot learners, representing a significant shift in the capabilities of artificial intelligence. By ...",
+          "query": "site:neurips.cc \"Language Models are Few-Shot Learners\" \"Best Paper\""
+        },
+        {
+          "id": "S11",
+          "tool": "wiki_search",
+          "title": "International Conference on Machine Learning",
+          "url": "https://en.wikipedia.org/wiki/International_Conference_on_Machine_Learning",
+          "content": "The International Conference on Machine Learning (ICML) is an international academic conference in machine learning held annually since 1980. It is the oldest and, along with NeurIPS and ICLR, one of the three primary conferences of highest impact and reputation in machine learning and artificial in",
+          "query": "NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S12",
+          "tool": "wiki_search",
+          "title": "Sébastien Bubeck",
+          "url": "https://en.wikipedia.org/wiki/S%C3%A9bastien_Bubeck",
+          "content": "Sébastien Bubeck (born April 16, 1985) is a French-American computer scientist. He was Microsoft's vice president of applied research,  distinguished scientist, and led the Machine Learning Foundations group at Microsoft Research Redmond. Bubeck was formerly an assistant professor at Princeton Unive",
+          "query": "NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S13",
+          "tool": "wiki_search",
+          "title": "Noam Brown",
+          "url": "https://en.wikipedia.org/wiki/Noam_Brown",
+          "content": "Noam Brown is a computer scientist and artificial intelligence researcher whose work has focused on strategic reasoning, imperfect-information games, reinforcement learning, and reasoning in large language models. He developed Libratus (2017) and Pluribus (2019) with Thomas Sandholm, the first artif",
+          "query": "NeurIPS 2020 best paper award"
+        },
+        {
+          "id": "S14",
+          "tool": "web_search",
+          "title": "Superficial White Matter Analysis: An Efficient Point-cloud- ...",
+          "url": "https://arxiv.org/html/2207.08975v3",
+          "content": "[2020] Chen, T., Kornblith, S., Norouzi, M., Hinton, G., 2020. A simple framework for contrastive learning of visual representations, in: Iii, H.D., Singh, A.",
+          "query": "NeurIPS 2020 Best Paper Award \"A Simple Framework for Contrastive Learning of Visual Representations\""
+        },
+        {
+          "id": "S15",
+          "tool": "web_search",
+          "title": "Watchog: A Light-weight Contrastive Learning based ...",
+          "url": "https://dl.acm.org/doi/10.1145/3626766",
+          "content": "2020a. A Simple Framework for Contrastive Learning of Visual Representations. In ICML, Vol. 119. 1597--1607. Google Scholar. [8]. Ting Chen, Simon Kornblith ...",
+          "query": "NeurIPS 2020 Best Paper Award \"A Simple Framework for Contrastive Learning of Visual Representations\""
+        },
+        {
+          "id": "S16",
+          "tool": "web_search",
+          "title": "Do Invariances in Deep Neural Networks Align with Human ...",
+          "url": "https://arxiv.org/html/2111.14726v4",
+          "content": "2020a. A simple framework for contrastive learning of visual representations. In ICML. [6] Chen, T.; Liu, S.; Chang, S.; Cheng, Y.; Amini, L.; and Wang, Z.",
+          "query": "NeurIPS 2020 Best Paper Award \"A Simple Framework for Contrastive Learning of Visual Representations\""
+        },
+        {
+          "id": "S17",
+          "tool": "web_search",
+          "title": "According to our #ML team this article about Contrastive ...",
+          "url": "https://www.facebook.com/Proxet.Custom.Software.Solutions/posts/according-to-our-ml-team-this-article-about-contrastive-representation-learning-/2450532765250438/",
+          "content": "A Simple Framework for Contrastive Learning of Visual Representations Ting Chen, Simon Kornblith, Mohammad Norouzi, Geoffrey Hinton : https://arxiv.org/abs ...",
+          "query": "NeurIPS 2020 Best Paper Award \"A Simple Framework for Contrastive Learning of Visual Representations\""
+        },
+        {
+          "id": "S18",
+          "tool": "web_search",
+          "title": "CSRef: Contrastive Semantic Alignment for Speech ...",
+          "url": "https://dl.acm.org/doi/10.1145/3765520",
+          "content": "2020. A Simple Framework for Contrastive Learning of Visual Representations. In Proceedings of the 37th International Conference on Machine Learning ...",
+          "query": "NeurIPS 2020 Best Paper Award \"A Simple Framework for Contrastive Learning of Visual Representations\""
+        },
+        {
+          "id": "S19",
+          "tool": "web_search",
+          "title": "Superposed Decoding: Multiple Generations from a Single ...",
+          "url": "https://neurips.cc/virtual/2024/poster/95663",
+          "content": "Language models are few-shot learners, 2020. [5] T. Cai, Y. Li, Z. Geng, H. Peng, J. D. Lee, D. Chen, and T. Dao. Medusa: Simple llm inference acceleration ...",
+          "query": "site:neurips.cc 2020 awards Outstanding Paper Award \"Language Models are Few-Shot Learners\""
+        },
+        {
+          "id": "S20",
+          "tool": "web_search",
+          "title": "NeurIPS Poster Visual Instruction Inversion: Image Editing ...",
+          "url": "https://neurips.cc/virtual/2023/poster/70612",
+          "content": "Outstanding Paper Awards · Creative AI Track · Workshops; Community ... Language models are few-shot learners. In: arXiv (2020). [6] Dhariwal ...",
+          "query": "site:neurips.cc 2020 awards Outstanding Paper Award \"Language Models are Few-Shot Learners\""
+        },
+        {
+          "id": "S21",
+          "tool": "web_search",
+          "title": "DuoGPT: Training-free Dual Sparsity through Activation-aware ...",
+          "url": "https://neurips.cc/virtual/2025/poster/118192",
+          "content": "Outstanding Paper Awards · Creative AI · Spotlights · Awards. Community. Affinity ... Language models are few-shot learners. Advances in neural information ...",
+          "query": "site:neurips.cc 2020 awards Outstanding Paper Award \"Language Models are Few-Shot Learners\""
+        },
+        {
+          "id": "S22",
+          "tool": "web_search",
+          "title": "Towards Provable Emergence of In-Context Reinforcement ...",
+          "url": "https://papers.neurips.cc/paper_files/paper/2025/file/24e07a062e1043fbf360c6933ad201da-Paper-Conference.pdf",
+          "content": "Language models are few-shot learners. In Advances in Neural Information Processing Systems, 2020. 10. Page 11. Xinyue Chen, Che Wang, Zijian Zhou, and Keith ...",
+          "query": "site:neurips.cc 2020 awards Outstanding Paper Award \"Language Models are Few-Shot Learners\""
+        },
+        {
+          "id": "S23",
+          "tool": "web_search",
+          "title": "The Cambridge Law Corpus: A Corpus for Legal AI Research",
+          "url": "https://neurips.cc/virtual/2023/poster/73448",
+          "content": "Language Models are Few-shot Learners. In Advances in Neural Information Processing Systems, 2020. Cited on page 1. N. Byrom. AI Risks Deepening Unequal ...",
+          "query": "site:neurips.cc 2020 awards Outstanding Paper Award \"Language Models are Few-Shot Learners\""
+        },
+        {
+          "id": "S24",
+          "tool": "web_search",
+          "title": "Organizers - NeurIPS 2022",
+          "url": "https://neurips.cc/virtual/2022/organizers",
+          "content": "Outstanding Paper Awards · Workshops; Community. Affinity Events · Socials ... Award in 2013, and five Outstanding Teaching Awards between 2016 and 2020.",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S25",
+          "tool": "web_search",
+          "title": "Neuro-Logic and Differentiable Controls (Yejin Choi)",
+          "url": "https://neurips.cc/virtual/2021/22196",
+          "content": "Outstanding Paper Awards · Invited Talks · Spotlights · Papers. Community. Affinity Events · Socials · Meetups · Mentorship · Town Hall · NeurIPS Café · Careers ...",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S26",
+          "tool": "web_search",
+          "title": "Perception Encoder: The best visual embeddings are not at ...",
+          "url": "https://neurips.cc/virtual/2025/oral/118806",
+          "content": "Papers · Competitions · Datasets & Benchmarks · Journal Track · Creative AI Track · Outstanding Paper Awards · Creative AI · Spotlights · Awards. Community.",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S27",
+          "tool": "web_search",
+          "title": "Key Challenges in Foundation Models (... and some ...",
+          "url": "https://neurips.cc/virtual/2023/82156",
+          "content": "Papers · Competitions · Datasets & Benchmarks · Journal Track · Outstanding Paper Awards · Creative AI Track · Workshops; Community. Sponsors; Help. What is a ...",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S28",
+          "tool": "web_search",
+          "title": "Almost Linear Time k-Medoids Clustering via Multi-Armed ...",
+          "url": "https://proceedings.neurips.cc/paper/2020/file/73b817090081cef1bca77232f4532c5d-Review.html",
+          "content": "Summary and Contributions: This paper addresses how to use bandits to accelerate computation for the Partitioning Around Mediods algorithm (PAM). PAM is a ...",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S29",
+          "tool": "web_search",
+          "title": "3rd Robot Learning Workshop",
+          "url": "https://neurips.cc/virtual/2020/public/workshop_16103.html",
+          "content": "Abstract: In the proposed workshop, we aim to discuss the challenges and opportunities for machine learning research in the context of ...",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S30",
+          "tool": "web_search",
+          "title": "Flattening Hierarchies with Policy Bootstrapping",
+          "url": "https://neurips.cc/virtual/2025/poster/118624",
+          "content": "Papers · Competitions · Datasets & Benchmarks · Journal Track · Creative AI Track · Outstanding Paper Awards · Creative AI · Spotlights · Awards. Community.",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S31",
+          "tool": "web_search",
+          "title": "Assessing SATNet's Ability to Solve the Symbol Grounding ...",
+          "url": "https://proceedings.neurips.cc/paper/2020/file/0ff8033cf9437c213ee13937b1c4c455-Paper.pdf",
+          "content": "It had been shown to solve Sudoku puzzles visually from examples of puzzle digit images, and was heralded as an impressive achievement towards the longstanding.",
+          "query": "site:neurips.cc \"2020 Outstanding Paper Awards\""
+        },
+        {
+          "id": "S32",
+          "tool": "web_search",
+          "title": "Conferences Best Paper Awards 2020",
+          "url": "https://www.acm.org/conferences/best-paper-awards-2020",
+          "content": "Best Paper Awards are presented at many ACM conferences to authors whose work represents groundbreaking research in their respective areas.",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S33",
+          "tool": "web_search",
+          "title": "[N] ICML 2020 Announces Outstanding Paper Awards",
+          "url": "https://www.reddit.com/r/MachineLearning/comments/hqpqof/n_icml_2020_announces_outstanding_paper_awards/",
+          "content": "Organizers of the 37th International Conference on Machine Learning (ICML) have announced their Outstanding Paper awards, recognizing papers ...",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S34",
+          "tool": "web_search",
+          "title": "Congratulations to the #NeurIPS2024 award winners - AI Hub",
+          "url": "https://aihub.org/2024/12/11/congratulations-to-the-neurips2024-award-winners/",
+          "content": "Outstanding paper award committee for dataset and benchmark track: Yulia Gel, Ludwig Schmidt, Elena Simperl, Joaquin Vanschoren, Xing Xie. tags: ...",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S35",
+          "tool": "web_search",
+          "title": "Analytics Vidhya - The NeurIPS 2025 Best Paper Awards",
+          "url": "https://www.linkedin.com/posts/analytics-vidhya_the-neurips-2025-best-paper-awards-activity-7399771535105822721-Xt0l",
+          "content": "The NeurIPS 2025 Best Paper Awards 1. Artificial Hivemind: The Open-Ended Homogeneity of Language Models (and Beyond): ...",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S36",
+          "tool": "web_search",
+          "title": "NeurIPS 2025 Best Papers Winners Announced",
+          "url": "https://eu.36kr.com/en/p/3570970959395720",
+          "content": "The winners of the best papers at NeurIPS 2025 were announced. A classic work from a decade ago by He Kaiming, Sun Jian, etc. won the award.",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S37",
+          "tool": "web_search",
+          "title": "NeurIPS 2020. Comprehensive analysis of authors, ...",
+          "url": "https://medium.com/criteo-engineering/neurips-2020-comprehensive-analysis-of-authors-organizations-and-countries-a1b55a08132e",
+          "content": "If for ICML 2020 there were 9 authors with 7+ papers, for NeurIPS 2020 this number is astounding 28 authors . Similar to the chart for ...",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S38",
+          "tool": "web_search",
+          "title": "🏆 NeurIPS 2020 Flatland Winners",
+          "url": "https://discourse.aicrowd.com/t/neurips-2020-flatland-winners/4010",
+          "content": "NeurIPS 2020 Flatland Winners ; JBR_HSE, 214.15 points; :2nd_place_medal: ai-team-flatland, 181.497 points ; An_Old_Driver, 297.507 points; : ...",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S39",
+          "tool": "web_search",
+          "title": "NeurIPS 2018 Best Paper Awards",
+          "url": "https://www.youtube.com/playlist?list=PLderfcX9H9MpTk97XztxGcZyEs4XB3vn8",
+          "content": "39K views • 7 years ago. 17:55 · Best Paper Awards NeurIPS 2018: Non-delusional Q-learning and Value-iteration. DSAI by Dr. Osbert Tay. 1.6K views • 7 years ago.",
+          "query": "NeurIPS 2020 \"Outstanding Paper Award\" winners official"
+        },
+        {
+          "id": "S40",
+          "tool": "web_search",
+          "title": "Language Models are Few-Shot Learners",
+          "url": "https://scispace.com/papers/language-models-are-few-shot-learners-2hr23olfy0",
+          "content": "Language Models are Few-Shot Learners ... TL;DR: This article showed that scaling up language models greatly improves task-agnostic, few-shot performance, ...",
+          "query": "\"Language Models are Few-Shot Learners\" \"Outstanding Paper Award\""
+        },
+        {
+          "id": "S41",
+          "tool": "web_search",
+          "title": "Review: Language Models are Few-Shot Learners",
+          "url": "https://medium.com/@lyfeyvutha/review-language-models-are-few-shot-learners-d938c71ff5bf",
+          "content": "Review: Language Models are Few-Shot Learners Paper: https://arxiv.org/pdf/2005.14165 I. Summary: Language models learn your prompts better, ...",
+          "query": "\"Language Models are Few-Shot Learners\" \"Outstanding Paper Award\""
+        },
+        {
+          "id": "S42",
+          "tool": "web_search",
+          "title": "Making Pre-trained Language Models Better Few-shot ...",
+          "url": "https://www.researchgate.net/publication/348079402_Making_Pre-trained_Language_Models_Better_Few-shot_Learners",
+          "content": "Language models are few-shot learners. In Advances in Neural Information Processing Systems (NeurIPS). BERT: Pre-training of deep ...",
+          "query": "\"Language Models are Few-Shot Learners\" \"Outstanding Paper Award\""
+        },
+        {
+          "id": "S43",
+          "tool": "web_search",
+          "title": "Paper Review - \"Language Models are Few-Shot Learners ...",
+          "url": "https://blog.louro.xyz/2020/06/02/paper-review-language-models-are-few-shot-learners-openais-gpt-3-paper",
+          "content": "Paper Review - \"Language Models are Few-Shot Learners\" (OpenAI's GPT-3 paper). OpenAI has just released the largest ML model yet, larger by ...",
+          "query": "\"Language Models are Few-Shot Learners\" \"Outstanding Paper Award\""
+        },
+        {
+          "id": "S44",
+          "tool": "web_search",
+          "title": "GPT-3 Paper 2020: Language Models Are Few",
+          "url": "https://www.facebook.com/fb-answers/gpt-3-paper-2020-language-models-are-few-shot-learners/",
+          "content": "GPT-3 was introduced in the 2020 paper \"Language Models are Few-Shot Learners\" with 175 billion parameters, showing that large language models can perform ...",
+          "query": "\"Language Models are Few-Shot Learners\" \"Outstanding Paper Award\""
+        },
+        {
+          "id": "S45",
+          "tool": "web_search",
+          "title": "Language Models are Few-Shot Graders | Request PDF",
+          "url": "https://www.researchgate.net/publication/389167613_Language_Models_are_Few-Shot_Graders",
+          "content": "... Language Models are Few-Shot Learners (Jul 2020), http://arxiv.org/abs/2005.14165, arXiv:2005.14165 [cs]. BERT: Pre-training of Deep Bidirectional ...",
+          "query": "\"Language Models are Few-Shot Learners\" \"Outstanding Paper Award\""
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "plan_solve",
+          "report": "## 结论\n\nGPT-3 原始论文的正式英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]  \n根据现有来源材料，无法确认该论文是否曾获得 NeurIPS 最佳论文奖，因此也无法确认其获奖年份。[S1][S4][S11][S12][S13]\n\n## 详细分析\n\n1. 来源材料将 GPT-3 对应论文明确标注为 **“GPT-3: Language Models are Few-Shot Learners”**，支持其正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1] 另一来源同样以“Language Models are Few-Shot Learners (GPT-3)”指称该论文，形成交叉印证。[S4]\n\n2. 关于 NeurIPS 最佳论文奖，现有材料中虽出现“NeurIPS 2020 Outstanding Paper”的视频标题描述，但该材料本身不足以作为官方获奖记录，且无法据此确认“Outstanding Paper”与研究问题所称“最佳论文奖”的对应关系及其正式获奖事实。[S4]\n\n3. 已有针对 NeurIPS 最佳论文的检索未获得能够确认该论文获奖的官方记录；相关检索结果要么与问题无关，要么未提供 GPT-3 论文获奖信息。[S11][S12][S13] 因此，基于现有证据，不能断言该论文获得过 NeurIPS 最佳论文奖，也不能确定任何获奖年份。[S1][S4][S11][S12][S13]",
+          "seconds": 88.66,
+          "llm_calls": 9,
+          "total_tokens": 11040,
+          "tool_calls": 5
+        },
+        {
+          "stage": "reflection",
+          "report": "## 结论\n\nGPT-3 对应论文的英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]  \n\n现有材料将该论文标注为 **“NeurIPS 2020 Outstanding Paper”**；因此，若将问题中的“最佳论文奖”概括性地指代 NeurIPS 的 **Outstanding Paper Award**，其对应年份为 **2020 年**。[S4]  \n\n不过，现有材料未提供 NeurIPS 官方 2020 年奖项页面或完整获奖名单，因而无法仅凭现有来源独立核实该论文被 NeurIPS 官方正式列入 Outstanding Paper Award 获奖论文名单。[S19][S24][S28][S40]\n\n## 详细分析\n\n1. GPT-3 论文的正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1][S4] 现有材料分别以“GPT-v3: Language Models are Few-Shot Learners”和“Language Models are Few-Shot Learners (GPT-3)”指称该论文。[S1][S4]\n\n2. 该论文被引用为发表于或收录于 NeurIPS 2020 的论文。[S22][S42] 但论文收录于 NeurIPS 2020 仅能说明其会议发表信息，不能单独证明其获得会议奖项。[S22][S42]\n\n3. 现有材料中有来源将该论文直接标注为 **“NeurIPS 2020 Outstanding Paper”**。[S4] 因此，在将中文“最佳论文奖”作为对 NeurIPS 杰出论文奖项的概括性表述时，可回答其获奖年份为 **2020 年**。[S4]\n\n4. “Outstanding Paper Award”是应与中文“最佳论文奖”加以区分的正式英文奖项表述；现有来源片段未包含 NeurIPS 官方 2020 年奖项页面或官方获奖论文名单。[S19][S24][S28][S40] 因此，2020 年这一回答依据现有的“NeurIPS 2020 Outstanding Paper”标注得出，但该标注尚未得到现有材料中的 NeurIPS 官方获奖记录独立验证。[S4][S19][S24][S28][S40]",
+          "seconds": 125.38,
+          "llm_calls": 16,
+          "total_tokens": 25194,
+          "tool_calls": 9
+        },
+        {
+          "stage": "verified",
+          "report": "## 结论\n\nGPT-3 对应论文的英文标题是 **“Language Models are Few-Shot Learners”**。[S1][S4]  \n\n现有材料将该论文标注为 **“NeurIPS 2020 Outstanding Paper”**；因此，若将问题中的“最佳论文奖”概括性地指代 NeurIPS 的 **Outstanding Paper Award**，其对应年份为 **2020 年**。[S4]  \n\n不过，现有材料未提供 NeurIPS 官方 2020 年奖项页面或完整获奖名单，因而无法仅凭现有来源独立核实该论文被 NeurIPS 官方正式列入 Outstanding Paper Award 获奖论文名单。[S19][S24][S28][S40]\n\n## 详细分析\n\n1. GPT-3 论文的正式英文标题为 **“Language Models are Few-Shot Learners”**。[S1][S4] 现有材料分别以“GPT-v3: Language Models are Few-Shot Learners”和“Language Models are Few-Shot Learners (GPT-3)”指称该论文。[S1][S4]\n\n2. 该论文被引用为发表于或收录于 NeurIPS 2020 的论文。[S22][S42] 但论文收录于 NeurIPS 2020 仅能说明其会议发表信息，不能单独证明其获得会议奖项。[S22][S42]\n\n3. 现有材料中有来源将该论文直接标注为 **“NeurIPS 2020 Outstanding Paper”**。[S4] 因此，在将中文“最佳论文奖”作为对 NeurIPS 杰出论文奖项的概括性表述时，可回答其获奖年份为 **2020 年**。[S4]\n\n4. “Outstanding Paper Award”是应与中文“最佳论文奖”加以区分的正式英文奖项表述；现有来源片段未包含 NeurIPS 官方 2020 年奖项页面或官方获奖论文名单。[S19][S24][S28][S40] 因此，2020 年这一回答依据现有的“NeurIPS 2020 Outstanding Paper”标注得出，但该标注尚未得到现有材料中的 NeurIPS 官方获奖记录独立验证。[S4][S19][S24][S28][S40]",
+          "seconds": 134.81,
+          "llm_calls": 18,
+          "total_tokens": 28105,
+          "tool_calls": 9
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 18,
+          "prompt_tokens": 24079,
+          "completion_tokens": 4026,
+          "seconds": 51.02262295607943,
+          "total_tokens": 28105
+        },
+        "stages": {
+          "plan": {
+            "calls": 1,
+            "prompt_tokens": 261,
+            "completion_tokens": 120,
+            "seconds": 1.6464344579726458,
+            "total_tokens": 381
+          },
+          "execute": {
+            "calls": 7,
+            "prompt_tokens": 8441,
+            "completion_tokens": 945,
+            "seconds": 15.071444666944444,
+            "total_tokens": 9386
+          },
+          "write": {
+            "calls": 1,
+            "prompt_tokens": 917,
+            "completion_tokens": 356,
+            "seconds": 2.9395824579987675,
+            "total_tokens": 1273
+          },
+          "reflect": {
+            "calls": 7,
+            "prompt_tokens": 12305,
+            "completion_tokens": 1849,
+            "seconds": 21.933789665112272,
+            "total_tokens": 14154
+          },
+          "verify": {
+            "calls": 2,
+            "prompt_tokens": 2155,
+            "completion_tokens": 756,
+            "seconds": 9.431371708051302,
+            "total_tokens": 2911
+          }
+        }
+      },
+      "seconds": 134.81,
+      "tool_calls": 9
+    }
+  }
+}

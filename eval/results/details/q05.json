@@ -1,0 +1,473 @@
+{
+  "id": "q05",
+  "question": "Model Context Protocol（MCP）是由哪家公司在什么时间发布的？",
+  "gold": "Anthropic，2024 年 11 月。",
+  "configs": {
+    "ReAct": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出由 Anthropic 于 2024 年 11 月发布，包含所有关键要点且与标准答案一致。",
+      "claims": 1,
+      "supported": 1,
+      "partial": 0,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 1.0,
+      "hallucination_rate": 0.0,
+      "seconds": 76.63,
+      "llm_calls": 4,
+      "total_tokens": 4037,
+      "tool_calls": 3,
+      "report": "Model Context Protocol（MCP）由 **Anthropic（Anthropic 公司）**于 **2024 年 11 月**推出（发布）。[S6]"
+    },
+    "+Plan-and-Solve": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出由 Anthropic 发布，日期为 2024年11月25日，包含并符合标准答案要求的 Anthropic 和 2024年11月。",
+      "claims": 5,
+      "supported": 3,
+      "partial": 2,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.8,
+      "hallucination_rate": 0.0,
+      "seconds": 80.44,
+      "llm_calls": 6,
+      "total_tokens": 5236,
+      "tool_calls": 3,
+      "report": "## 结论\n\nModel Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]  \n\n## 详细分析\n\n- Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]  \n- 该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]  \n- 公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]  \n- 因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]"
+    },
+    "+Reflection": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出由 Anthropic 发布，日期为 2024年11月25日，包含标准答案要求的 Anthropic 和 2024年11月，且信息一致。",
+      "claims": 5,
+      "supported": 3,
+      "partial": 2,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.8,
+      "hallucination_rate": 0.0,
+      "seconds": 82.36,
+      "llm_calls": 7,
+      "total_tokens": 5895,
+      "tool_calls": 3,
+      "report": "## 结论\n\nModel Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]  \n\n## 详细分析\n\n- Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]  \n- 该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]  \n- 公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]  \n- 因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]"
+    },
+    "+溯源验证": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出 MCP 由 Anthropic 发布，日期为 2024年11月25日，包含标准答案要求的 Anthropic 和 2024年11月两个要点，且表述更具体，不矛盾。",
+      "claims": 5,
+      "supported": 3,
+      "partial": 2,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.8,
+      "hallucination_rate": 0.0,
+      "seconds": 84.96,
+      "llm_calls": 8,
+      "total_tokens": 6960,
+      "tool_calls": 3,
+      "report": "## 结论\n\nModel Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]  \n\n## 详细分析\n\n- Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]  \n- 该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]  \n- 公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]  \n- 因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]"
+    }
+  },
+  "runs": {
+    "react": {
+      "question": "Model Context Protocol（MCP）是由哪家公司在什么时间发布的？",
+      "standalone_question": "Model Context Protocol（MCP）是由哪家公司在什么时间发布的？",
+      "plan_rationale": "",
+      "findings": [
+        {
+          "question": "Model Context Protocol（MCP）是由哪家公司在什么时间发布的？",
+          "answer": "Model Context Protocol（MCP）由 **Anthropic（Anthropic 公司）**于 **2024 年 11 月**推出（发布）。[S6]",
+          "steps": [
+            {
+              "thought": "需要核实 MCP 的发布主体与首次发布时间，优先查询官方公告。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:anthropic.com/news Model Context Protocol November 2024"
+              },
+              "observation": "没有找到相关结果。请换关键词或换工具。",
+              "source_ids": []
+            },
+            {
+              "thought": "官方站内搜索无结果，改用更精确的公告标题和网页搜索，核实首次公开发布日期。",
+              "action": "web_search",
+              "action_input": {
+                "query": "Anthropic \"Introducing the Model Context Protocol\" date",
+                "num_results": 5
+              },
+              "observation": "[S1] A Simple Guide to Anthropic's Model Context Protocol (MCP) | https://www.linkedin.com/pulse/unlocking-ais-true-potential-simple-guide-anthropics-model-jadeja-d0muf\nIn simple terms, Anthropic's Model Context Protocol (MCP) is like a universal translator for AI models and data. It allows AI syste",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5"
+              ]
+            },
+            {
+              "thought": "搜索结果显示发布方为 Anthropic，但缺少精确日期；改用百科检索以核实发布日期。",
+              "action": "wiki_search",
+              "action_input": {
+                "query": "Model Context Protocol",
+                "lang": "en"
+              },
+              "observation": "[S6] Model Context Protocol | https://en.wikipedia.org/wiki/Model_Context_Protocol\nThe Model Context Protocol (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) int",
+              "source_ids": [
+                "S6",
+                "S7",
+                "S8"
+              ]
+            }
+          ],
+          "finished": true
+        }
+      ],
+      "followups": [],
+      "critique": null,
+      "verification": null,
+      "report": "Model Context Protocol（MCP）由 **Anthropic（Anthropic 公司）**于 **2024 年 11 月**推出（发布）。[S6]\n\n## 参考来源\n- [S6] Model Context Protocol — https://en.wikipedia.org/wiki/Model_Context_Protocol",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "web_search",
+          "title": "A Simple Guide to Anthropic's Model Context Protocol (MCP)",
+          "url": "https://www.linkedin.com/pulse/unlocking-ais-true-potential-simple-guide-anthropics-model-jadeja-d0muf",
+          "content": "In simple terms, Anthropic's Model Context Protocol (MCP) is like a universal translator for AI models and data. It allows AI systems to easily ...",
+          "query": "Anthropic \"Introducing the Model Context Protocol\" date"
+        },
+        {
+          "id": "S2",
+          "tool": "web_search",
+          "title": "Anthropic launching the Model Context Protocol (MCP)",
+          "url": "https://mynextdeveloper.com/blogs/anthropic-launching-the-model-context-protocol-mcp",
+          "content": "Discover Anthropic's Model Context Protocol (MCP) for AI agents, enhancing automation and workflows with Claude 3.5 Sonnet.",
+          "query": "Anthropic \"Introducing the Model Context Protocol\" date"
+        },
+        {
+          "id": "S3",
+          "tool": "web_search",
+          "title": "Anthropic's MCP aims to transform AI integration",
+          "url": "https://dig.watch/updates/anthropics-mcp-aims-to-transform-ai-integration",
+          "content": "Anthropic has unveiled the Model Context Protocol (MCP), an open-source standard designed to improve AI assistant performance by connecting them ...",
+          "query": "Anthropic \"Introducing the Model Context Protocol\" date"
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "MCP (Model Context Protocol) Explained: Why It Matters for AI ...",
+          "url": "https://www.whatgenerativeai.com/posts/model-context-protocol-mcp-explained/",
+          "content": "The Model Context Protocol (MCP), open-sourced by Anthropic in late 2024, fixed this. What MCP is. MCP is a standard protocol for exposing ...",
+          "query": "Anthropic \"Introducing the Model Context Protocol\" date"
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "Anthropic Donates Model Context Protocol to Linux…",
+          "url": "https://createwith.com/tool/claude/updates/anthropic-donates-model-context-protocol-to-linux-foundation-under-new-agentic-a",
+          "content": "Anthropic is transferring ownership of the Model Context Protocol to the Linux Foundation, one year after launching the open standard that ...",
+          "query": "Anthropic \"Introducing the Model Context Protocol\" date"
+        },
+        {
+          "id": "S6",
+          "tool": "wiki_search",
+          "title": "Model Context Protocol",
+          "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol",
+          "content": "The Model Context Protocol (MCP) is an open standard and open-source framework introduced by Anthropic in November 2024 to standardize the way artificial intelligence (AI) systems like large language models (LLMs) integrate and share data with external tools, systems, and data sources. MCP provides ",
+          "query": "Model Context Protocol"
+        },
+        {
+          "id": "S7",
+          "tool": "wiki_search",
+          "title": "MCP",
+          "url": "https://en.wikipedia.org/wiki/MCP",
+          "content": "MCP may refer to:",
+          "query": "Model Context Protocol"
+        },
+        {
+          "id": "S8",
+          "tool": "wiki_search",
+          "title": "Agent harness",
+          "url": "https://en.wikipedia.org/wiki/Agent_harness",
+          "content": "An agent harness, also known as agent scaffolding, is the software infrastructure surrounding a large language model (LLM) that enables it to operate as an AI agent. It manages tool use, memory, state persistence, execution environments and feedback loops, as opposed to the model's internal reasonin",
+          "query": "Model Context Protocol"
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "react",
+          "report": "Model Context Protocol（MCP）由 **Anthropic（Anthropic 公司）**于 **2024 年 11 月**推出（发布）。[S6]",
+          "seconds": 76.63,
+          "llm_calls": 4,
+          "total_tokens": 4037,
+          "tool_calls": 3
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 4,
+          "prompt_tokens": 3749,
+          "completion_tokens": 288,
+          "seconds": 6.341557874926366,
+          "total_tokens": 4037
+        },
+        "stages": {
+          "execute": {
+            "calls": 4,
+            "prompt_tokens": 3749,
+            "completion_tokens": 288,
+            "seconds": 6.341557874926366,
+            "total_tokens": 4037
+          }
+        }
+      },
+      "seconds": 76.63,
+      "tool_calls": 3
+    },
+    "full": {
+      "question": "Model Context Protocol（MCP）是由哪家公司在什么时间发布的？",
+      "standalone_question": "Model Context Protocol（MCP）是由哪家公司在什么时间发布的？",
+      "plan_rationale": "检索 MCP 的官方发布公告或文档，以同时确认发布主体和发布日期。",
+      "findings": [
+        {
+          "question": "Model Context Protocol（MCP）的官方首次发布公告由哪家公司发布，公告日期是什么时候？",
+          "answer": "Model Context Protocol（MCP）的官方首次发布公告由 **Anthropic** 发布，公告日期是 **2024 年 11 月 25 日**。[S6]",
+          "steps": [
+            {
+              "thought": "需要核实 MCP 的官方首次发布公告、发布主体和日期；优先检索官方公告页面。",
+              "action": "web_search",
+              "action_input": {
+                "query": "Model Context Protocol official announcement November 2024 Anthropic"
+              },
+              "observation": "工具调用失败：TimeoutError: SerpApi 搜索超时，请稍后重试或改用 wiki_search",
+              "source_ids": []
+            },
+            {
+              "thought": "网页搜索超时，改用更具体的官方域名查询以确认首次公告的发布者与日期。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:anthropic.com/news \"Model Context Protocol\" \"November\"",
+                "num_results": 5
+              },
+              "observation": "[S1] Model Context Protocol (MCP): The Complete 2026 Guide | https://kraviona.com/ai-and-automation/model-context-protocol-mcp-the-complete-2026-guide\nModel Context Protocol (MCP) is an open standard, originally published by Anthropic in November 2024, that lets AI models and coding agents ...\n\n[S2]",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5"
+              ]
+            },
+            {
+              "thought": "搜索结果仅确认 Anthropic 与 2024 年 11 月，尚缺精确日期。尝试读取可能的官方公告页面以核实发布日期。",
+              "action": "fetch_page",
+              "action_input": {
+                "url": "https://www.anthropic.com/news/model-context-protocol"
+              },
+              "observation": "[S6] Introducing the Model Context Protocol \\ Anthropic | https://www.anthropic.com/news/model-context-protocol\nAnnouncements\nIntroducing the Model Context Protocol\nNov 25, 2024\nToday, we're open-sourcing the\nModel Context Protocol\n(MCP), a new standard for connecting AI assistants to the systems wh",
+              "source_ids": [
+                "S6"
+              ]
+            }
+          ],
+          "finished": true
+        }
+      ],
+      "followups": [],
+      "critique": {
+        "score": 10,
+        "issues": [],
+        "follow_up_questions": [],
+        "needs_revision": false
+      },
+      "verification": {
+        "stats": {
+          "claims": 5,
+          "supported": 3,
+          "partial": 2,
+          "unsupported": 0,
+          "removed": 0,
+          "fabricated_citations": 0,
+          "support_rate": 0.8,
+          "hallucination_rate": 0.0
+        },
+        "checks": [
+          {
+            "id": 1,
+            "text": "Model Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]",
+            "citations": [
+              "S6"
+            ],
+            "label": "partial",
+            "reason": "发布与日期可证，“首次”未明确说明"
+          },
+          {
+            "id": 2,
+            "text": "Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]",
+            "citations": [
+              "S6"
+            ],
+            "label": "supported",
+            "reason": "页面标题及“Announcements”分类明确可见"
+          },
+          {
+            "id": 3,
+            "text": "该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]",
+            "citations": [
+              "S6"
+            ],
+            "label": "supported",
+            "reason": "页面明确标注“Nov 25, 2024”"
+          },
+          {
+            "id": 4,
+            "text": "公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]",
+            "citations": [
+              "S6"
+            ],
+            "label": "supported",
+            "reason": "正文明确称当日开源并描述其用途"
+          },
+          {
+            "id": 5,
+            "text": "因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]",
+            "citations": [
+              "S6"
+            ],
+            "label": "partial",
+            "reason": "公司和日期可证，“首次”未明确说明"
+          }
+        ],
+        "removed": [],
+        "fabricated_citations": []
+      },
+      "report": "## 结论\n\nModel Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]  \n\n## 详细分析\n\n- Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]  \n- 该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]  \n- 公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]  \n- 因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]\n\n## 参考来源\n- [S6] Introducing the Model Context Protocol \\ Anthropic — https://www.anthropic.com/news/model-context-protocol",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "web_search",
+          "title": "Model Context Protocol (MCP): The Complete 2026 Guide",
+          "url": "https://kraviona.com/ai-and-automation/model-context-protocol-mcp-the-complete-2026-guide",
+          "content": "Model Context Protocol (MCP) is an open standard, originally published by Anthropic in November 2024, that lets AI models and coding agents ...",
+          "query": "site:anthropic.com/news \"Model Context Protocol\" \"November\""
+        },
+        {
+          "id": "S2",
+          "tool": "web_search",
+          "title": "Model Context Protocol Becomes Universal Language for ...",
+          "url": "https://que.com/model-context-protocol-becomes-universal-language-for-enterprise-ai-agents/",
+          "content": "Model Context Protocol Becomes Universal Language for Enterprise AI Agents ... November 2025 · October 2025 · September 2025 · August 2025 · July ...",
+          "query": "site:anthropic.com/news \"Model Context Protocol\" \"November\""
+        },
+        {
+          "id": "S3",
+          "tool": "web_search",
+          "title": "Introducing Anthropic's Model Context Protocol (MCP)",
+          "url": "https://www.linkedin.com/pulse/introducing-anthropics-model-context-protocol-j0xrc",
+          "content": "In November 2024, Anthropic unveiled the Model Context Protocol (MCP), an open standard designed to streamline the integration of AI ...",
+          "query": "site:anthropic.com/news \"Model Context Protocol\" \"November\""
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "The Model Context Protocol Revolution",
+          "url": "https://fourweekmba.com/the-model-context-protocol-revolution/",
+          "content": "The Model Context Protocol Revolution ... In November 2024, Anthropic quietly released something that would fundamentally transform how AI ...",
+          "query": "site:anthropic.com/news \"Model Context Protocol\" \"November\""
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "Introducing Model Context Protocol (MCP) for AI-APIS",
+          "url": "https://www.linkedin.com/posts/ankitabhishekdataengineering_mcp-the-missing-link-between-ai-agents-and-activity-7306513599449989120-NbdU",
+          "content": "Last November, Anthropic introduced MCP (Model Context Protocol)—a game-changer that standardizes API access for AI agents. Think of it ...",
+          "query": "site:anthropic.com/news \"Model Context Protocol\" \"November\""
+        },
+        {
+          "id": "S6",
+          "tool": "fetch_page",
+          "title": "Introducing the Model Context Protocol \\ Anthropic",
+          "url": "https://www.anthropic.com/news/model-context-protocol",
+          "content": "Announcements\nIntroducing the Model Context Protocol\nNov 25, 2024\nToday, we're open-sourcing the\nModel Context Protocol\n(MCP), a new standard for connecting AI assistants to the systems where data lives, including content repositories, business tools, and development environments. Its aim is to help",
+          "query": "https://www.anthropic.com/news/model-context-protocol"
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "plan_solve",
+          "report": "## 结论\n\nModel Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]  \n\n## 详细分析\n\n- Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]  \n- 该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]  \n- 公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]  \n- 因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]",
+          "seconds": 80.44,
+          "llm_calls": 6,
+          "total_tokens": 5236,
+          "tool_calls": 3
+        },
+        {
+          "stage": "reflection",
+          "report": "## 结论\n\nModel Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]  \n\n## 详细分析\n\n- Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]  \n- 该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]  \n- 公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]  \n- 因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]",
+          "seconds": 82.36,
+          "llm_calls": 7,
+          "total_tokens": 5895,
+          "tool_calls": 3
+        },
+        {
+          "stage": "verified",
+          "report": "## 结论\n\nModel Context Protocol（MCP）由 Anthropic 发布，首次官方发布公告的日期为 2024 年 11 月 25 日。[S6]  \n\n## 详细分析\n\n- Anthropic 官网发布了题为《Introducing the Model Context Protocol》的公告，页面将其归类为“Announcements”。[S6]  \n- 该公告明确标注日期为“Nov 25, 2024”，即 2024 年 11 月 25 日。[S6]  \n- 公告正文称 Anthropic 当日开源了 Model Context Protocol（MCP），并将其描述为一种用于连接 AI 助手与数据所在系统的新标准。[S6]  \n- 因此，根据官方首次发布公告可确认：MCP 的发布公司为 Anthropic，发布时间为 2024 年 11 月 25 日。[S6]",
+          "seconds": 84.96,
+          "llm_calls": 8,
+          "total_tokens": 6960,
+          "tool_calls": 3
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 8,
+          "prompt_tokens": 5995,
+          "completion_tokens": 965,
+          "seconds": 14.785753082018346,
+          "total_tokens": 6960
+        },
+        "stages": {
+          "plan": {
+            "calls": 1,
+            "prompt_tokens": 255,
+            "completion_tokens": 77,
+            "seconds": 1.4920295419869944,
+            "total_tokens": 332
+          },
+          "execute": {
+            "calls": 4,
+            "prompt_tokens": 3952,
+            "completion_tokens": 370,
+            "seconds": 6.374592249048874,
+            "total_tokens": 4322
+          },
+          "write": {
+            "calls": 1,
+            "prompt_tokens": 391,
+            "completion_tokens": 191,
+            "seconds": 2.3956124579999596,
+            "total_tokens": 582
+          },
+          "reflect": {
+            "calls": 1,
+            "prompt_tokens": 556,
+            "completion_tokens": 103,
+            "seconds": 1.9206907079787925,
+            "total_tokens": 659
+          },
+          "verify": {
+            "calls": 1,
+            "prompt_tokens": 841,
+            "completion_tokens": 224,
+            "seconds": 2.6028281250037253,
+            "total_tokens": 1065
+          }
+        }
+      },
+      "seconds": 84.96,
+      "tool_calls": 3
+    }
+  }
+}

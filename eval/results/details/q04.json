@@ -1,0 +1,680 @@
+{
+  "id": "q04",
+  "question": "DeepSeek-R1 训练中使用的强化学习算法叫什么？该算法最早在哪篇论文中提出？",
+  "gold": "GRPO（Group Relative Policy Optimization），最早在 DeepSeekMath 论文中提出。",
+  "configs": {
+    "ReAct": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出算法为GRPO（Group Relative Policy Optimization），并说明其最早在DeepSeekMath论文中提出，包含全部关键要点且与标准答案一致。",
+      "claims": 2,
+      "supported": 0,
+      "partial": 2,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.5,
+      "hallucination_rate": 0.0,
+      "seconds": 158.06,
+      "llm_calls": 5,
+      "total_tokens": 6804,
+      "tool_calls": 4,
+      "report": "DeepSeek-R1 训练中使用的强化学习算法是**组相对策略优化**（Group Relative Policy Optimization，**GRPO**）。[S3]\n\nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》** 中提出；该论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明它是 PPO 的一种变体。[S6]"
+    },
+    "+Plan-and-Solve": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出DeepSeek-R1使用GRPO（Group Relative Policy Optimization），并说明该算法最早由DeepSeek团队在《DeepSeekMath》论文中提出，包含全部必需要点且与标准答案一致。",
+      "claims": 11,
+      "supported": 8,
+      "partial": 3,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.8636,
+      "hallucination_rate": 0.0,
+      "seconds": 208.32,
+      "llm_calls": 12,
+      "total_tokens": 19372,
+      "tool_calls": 8,
+      "report": "## 结论\n\nDeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]  \nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]\n\n## 详细分析\n\n- DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]\n\n- 对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]\n\n- 关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]\n\n- 现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]\n\n- GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]\n\n- 该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu 和 Daya Guo。[S16]\n\n- 该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16] 现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]"
+    },
+    "+Reflection": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出算法为GRPO（Group Relative Policy Optimization），并说明其最早在DeepSeekMath论文中提出，包含全部必需要点且与标准答案一致。",
+      "claims": 11,
+      "supported": 8,
+      "partial": 3,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.8636,
+      "hallucination_rate": 0.0,
+      "seconds": 211.33,
+      "llm_calls": 13,
+      "total_tokens": 20643,
+      "tool_calls": 8,
+      "report": "## 结论\n\nDeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]  \nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]\n\n## 详细分析\n\n- DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]\n\n- 对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]\n\n- 关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]\n\n- 现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]\n\n- GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]\n\n- 该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu 和 Daya Guo。[S16]\n\n- 该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16] 现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]"
+    },
+    "+溯源验证": {
+      "accuracy": 1.0,
+      "accuracy_reason": "报告明确指出算法为GRPO（Group Relative Policy Optimization），并说明其最早在DeepSeekMath论文中提出，覆盖且符合全部必需要点。",
+      "claims": 11,
+      "supported": 8,
+      "partial": 3,
+      "unsupported": 0,
+      "removed": 0,
+      "fabricated_citations": 0,
+      "support_rate": 0.8636,
+      "hallucination_rate": 0.0,
+      "seconds": 228.58,
+      "llm_calls": 15,
+      "total_tokens": 24871,
+      "tool_calls": 8,
+      "report": "## 结论\n\nDeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]  \nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]\n\n## 详细分析\n\n- DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]\n\n- 对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]\n\n- 关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]\n\n- 现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]\n\n- GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]\n\n- 该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu 和 Daya Guo。[S16]\n\n- 该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16] 现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]"
+    }
+  },
+  "runs": {
+    "react": {
+      "question": "DeepSeek-R1 训练中使用的强化学习算法叫什么？该算法最早在哪篇论文中提出？",
+      "standalone_question": "DeepSeek-R1 训练中使用的强化学习算法叫什么？该算法最早在哪篇论文中提出？",
+      "plan_rationale": "",
+      "findings": [
+        {
+          "question": "DeepSeek-R1 训练中使用的强化学习算法叫什么？该算法最早在哪篇论文中提出？",
+          "answer": "DeepSeek-R1 训练中使用的强化学习算法是**组相对策略优化**（Group Relative Policy Optimization，**GRPO**）。[S3]\n\nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》** 中提出；该论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明它是 PPO 的一种变体。[S6]",
+          "steps": [
+            {
+              "thought": "需要核实DeepSeek-R1训练所用强化学习算法及其原始论文，优先检索官方技术报告。",
+              "action": "web_search",
+              "action_input": {
+                "query": "DeepSeek-R1 technical report GRPO algorithm originally proposed paper",
+                "num_results": 5
+              },
+              "observation": "[S1] R1-Zero's “Aha Moment” in Visual Reasoning on a 2B Non- ... | https://arxiv.org/html/2503.05132v1\nThis paper presents VisualThinker R1 Zero, the first successful multimodal replication of DeepSeek R1's emergent reasoning characteristics.\n\n[S2] DeepSeek R1 Updated Technical Report Analysis | htt",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5"
+              ]
+            },
+            {
+              "thought": "搜索结果表明算法为GRPO，但需通过DeepSeek-R1官方报告与DeepSeekMath论文原文核实其提出来源。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:arxiv.org DeepSeekMath Group Relative Policy Optimization GRPO proposed"
+              },
+              "observation": "工具调用失败：TimeoutError: SerpApi 搜索超时，请稍后重试或改用 wiki_search",
+              "source_ids": []
+            },
+            {
+              "thought": "搜索超时，改直接读取已知的 DeepSeekMath 论文页面，以核实GRPO是否为该文提出。",
+              "action": "fetch_page",
+              "action_input": {
+                "url": "https://arxiv.org/html/2402.03300"
+              },
+              "observation": "[S6] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models | https://arxiv.org/html/2402.03300\n\\reportnumber\n001\nDeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models\nZhihong Shao\n1,2∗†\n, Peiyi Wang\n1,3∗†\n, Qihao Zhu\n1,3∗†\n, Runxin Xu\n1\n, Jun",
+              "source_ids": [
+                "S6"
+              ]
+            },
+            {
+              "thought": "结论已有原始论文的直接证据；还需核实DeepSeek-R1报告明确称训练采用GRPO。",
+              "action": "web_search",
+              "action_input": {
+                "query": "DeepSeek-R1 arXiv Group Relative Policy Optimization GRPO technical report",
+                "num_results": 5
+              },
+              "observation": "工具调用失败：TimeoutError: SerpApi 搜索超时，请稍后重试或改用 wiki_search",
+              "source_ids": []
+            }
+          ],
+          "finished": true
+        }
+      ],
+      "followups": [],
+      "critique": null,
+      "verification": null,
+      "report": "DeepSeek-R1 训练中使用的强化学习算法是**组相对策略优化**（Group Relative Policy Optimization，**GRPO**）。[S3]\n\nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》** 中提出；该论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明它是 PPO 的一种变体。[S6]\n\n## 参考来源\n- [S3] DeepSeek R1: Advanced AI Architecture Guide — https://collabnix.com/deepseek-r1-technical-guide-advanced-reasoning-ai-architecture/\n- [S6] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models — https://arxiv.org/html/2402.03300",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "web_search",
+          "title": "R1-Zero's “Aha Moment” in Visual Reasoning on a 2B Non- ...",
+          "url": "https://arxiv.org/html/2503.05132v1",
+          "content": "This paper presents VisualThinker R1 Zero, the first successful multimodal replication of DeepSeek R1's emergent reasoning characteristics.",
+          "query": "DeepSeek-R1 technical report GRPO algorithm originally proposed paper"
+        },
+        {
+          "id": "S2",
+          "tool": "web_search",
+          "title": "DeepSeek R1 Updated Technical Report Analysis",
+          "url": "https://explore.n1n.ai/blog/deepseek-r1-technical-report-analysis-2026-01-19",
+          "content": "By using Group Relative Policy Optimization (GRPO), DeepSeek avoids the massive memory overhead of a separate Critic model. This efficiency ...",
+          "query": "DeepSeek-R1 technical report GRPO algorithm originally proposed paper"
+        },
+        {
+          "id": "S3",
+          "tool": "web_search",
+          "title": "DeepSeek R1: Advanced AI Architecture Guide",
+          "url": "https://collabnix.com/deepseek-r1-technical-guide-advanced-reasoning-ai-architecture/",
+          "content": "DeepSeek AI leverages Group Relative Policy Optimization (GRPO), a reinforcement learning algorithm introduced in the DeepSeekMath paper in ...",
+          "query": "DeepSeek-R1 technical report GRPO algorithm originally proposed paper"
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "With a Training Cost of $294000, DeepSeek-R1 ...",
+          "url": "https://hyper.ai/en/news/44332",
+          "content": "The research team used Group Relative Policy Optimization (GRPO), an algorithm originally proposed to simplify the training process and ...",
+          "query": "DeepSeek-R1 technical report GRPO algorithm originally proposed paper"
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "Deepseek-R1 Explained",
+          "url": "https://medium.com/@yuvrajsagar117/deepseek-r1-explained-def2e35ec7bf",
+          "content": "They introduced a new large-scale reinforcement learning (RL) algortithm, named as Group Relative Policy Optimization (GRPO), specifically ...",
+          "query": "DeepSeek-R1 technical report GRPO algorithm originally proposed paper"
+        },
+        {
+          "id": "S6",
+          "tool": "fetch_page",
+          "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+          "url": "https://arxiv.org/html/2402.03300",
+          "content": "\\reportnumber\n001\nDeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models\nZhihong Shao\n1,2∗†\n, Peiyi Wang\n1,3∗†\n, Qihao Zhu\n1,3∗†\n, Runxin Xu\n1\n, Junxiao Song\n1\nXiao Bi\n1\n,\nHaowei Zhang\n1\n,\nMingchuan Zhang\n1\n,\nY.K. Li\n1\n,\nY. Wu\n1\n,\nDaya Guo\n1∗\n1\nDeepSeek-AI,\n2\nTsinghua Uni",
+          "query": "https://arxiv.org/html/2402.03300"
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "react",
+          "report": "DeepSeek-R1 训练中使用的强化学习算法是**组相对策略优化**（Group Relative Policy Optimization，**GRPO**）。[S3]\n\nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》** 中提出；该论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明它是 PPO 的一种变体。[S6]",
+          "seconds": 158.06,
+          "llm_calls": 5,
+          "total_tokens": 6804,
+          "tool_calls": 4
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 5,
+          "prompt_tokens": 6304,
+          "completion_tokens": 500,
+          "seconds": 9.319944041781127,
+          "total_tokens": 6804
+        },
+        "stages": {
+          "execute": {
+            "calls": 5,
+            "prompt_tokens": 6304,
+            "completion_tokens": 500,
+            "seconds": 9.319944041781127,
+            "total_tokens": 6804
+          }
+        }
+      },
+      "seconds": 158.06,
+      "tool_calls": 4
+    },
+    "full": {
+      "question": "DeepSeek-R1 训练中使用的强化学习算法叫什么？该算法最早在哪篇论文中提出？",
+      "standalone_question": "DeepSeek-R1 训练中使用的强化学习算法叫什么？该算法最早在哪篇论文中提出？",
+      "plan_rationale": "先从 DeepSeek-R1 的官方技术报告确认其使用的强化学习算法名称，再根据该名称追溯并核实该算法首次提出的论文。",
+      "findings": [
+        {
+          "question": "检索 DeepSeek-R1 官方技术报告或论文，确认其训练阶段使用的强化学习算法名称及相关表述。",
+          "answer": "结论：DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》的训练所使用的强化学习算法名称为 **GRPO（Group Relative Policy Optimization，组相对策略优化）**。检索到的官方论文页面说明，该工作会先介绍其“RL algorithm”；同一论文检索结果明确出现了“GRPO clip ratio（GRPO 裁剪比率）”，可确认该算法为 GRPO。[S2][S1]\n\n训练阶段相关表述如下：\n- **DeepSeek-R1-Zero**：在**不以监督微调（SFT）作为预备步骤**的情况下，直接通过“大规模强化学习（large-scale RL）”训练。[S2]\n- **DeepSeek-R1**：为解决 R1-Zero 的可读性差、语言混杂等问题，引入**多阶段训练（multi-stage training）**，并在 RL 前使用**冷启动数据（cold-start data）**。[S2]\n- 关于 GRPO 的阶段使用，现有检索结果显示论文第一阶段 RL 设定了“GRPO clip ratio”，因此至少可确认第一阶段 RL 使用 GRPO。[S1]\n\n受当前可用原文片段限制，无法从已取得的官方报告正文中逐字核实 DeepSeek-R1 后续每一 RL 阶段的完整顺序、奖励设计及超参数；因此不对这些细节作超出证据的断言。",
+          "steps": [
+            {
+              "thought": "需要定位 DeepSeek-R1 官方技术报告原文，并核实其中对各训练阶段强化学习算法的明确表述。",
+              "action": "web_search",
+              "action_input": {
+                "query": "DeepSeek-R1 official technical report reinforcement learning algorithm GRPO training stages",
+                "num_results": 5
+              },
+              "observation": "[S1] DeepSeek-R1 incentivizes reasoning in LLMs through ... | https://www.nature.com/articles/s41586-025-09422-z\nIn the first stage of RL, we set the learning rate to 3 × 10−6, the KL coefficient to 0.001, the GRPO clip ratio ϵ to 10 and the sampling ...\n\n[S2] DeepSeek-R1: Incentivizing Reasoning Ca",
+              "source_ids": [
+                "S1",
+                "S2",
+                "S3",
+                "S4",
+                "S5"
+              ]
+            },
+            {
+              "thought": "已找到官方 arXiv 技术报告页面；需要读取正文，提取算法名称、定义及 DeepSeek-R1-Zero 和 DeepSeek-R1 各阶段训练表述。",
+              "action": "fetch_page",
+              "action_input": {
+                "url": "https://arxiv.org/html/2501.12948v1"
+              },
+              "observation": "[S2] DeepSeek-R1: Incentivizing Reasoning Capability in LLMs ... | https://arxiv.org/html/2501.12948v1\n\\reportnumber\n001\nDeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning\nDeepSeek-AI\nresearch@deepseek.com\nAbstract\nWe introduce our first-generation reasoning models, D",
+              "source_ids": [
+                "S2"
+              ]
+            },
+            {
+              "thought": "正文摘要确认了 R1-Zero 直接大规模 RL、R1 采用冷启动与多阶段训练，但仍需取得报告中“RL Algorithm”和训练流程章节的原文，以准确说明算法及阶段。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:arxiv.org/html/2501.12948 \"GRPO\" \"DeepSeek-R1\" \"second stage\""
+              },
+              "observation": "没有找到相关结果。请换关键词或换工具。",
+              "source_ids": []
+            },
+            {
+              "thought": "搜索未返回章节级结果；改用官方 GitHub 仓库中的技术报告链接或 README，以核实报告对应版本及训练阶段表述。",
+              "action": "web_search",
+              "action_input": {
+                "query": "site:github.com/deepseek-ai/DeepSeek-R1 technical report GRPO rejection sampling RL"
+              },
+              "observation": "没有找到相关结果。请换关键词或换工具。",
+              "source_ids": []
+            }
+          ],
+          "finished": false
+        },
+        {
+          "question": "根据上一步找到的强化学习算法名称，检索该算法的原始论文，确认最早提出该算法的论文标题、作者和发表信息。",
+          "answer": "结论：GRPO（Group Relative Policy Optimization，组相对策略优化）最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出。该论文摘要明确写道“we introduce Group Relative Policy Optimization (GRPO)”，并将其定义为 PPO 的一种变体。[S16]\n\n- **论文标题**：*DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。[S16]\n- **作者**：Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu、Daya Guo。[S16]\n- **发表/公开信息**：以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开；v1 的首次提交时间为 **2024年2月5日**，当前记录显示最后修订版为 v3（2024年4月27日）；DOI 为 **10.48550/arXiv.2402.03300**。[S16]\n\n基于现有证据，只能确认其 arXiv 预印本公开信息；未能确认该原始论文是否另有正式会议或期刊发表版本。[S16]",
+          "steps": [
+            {
+              "thought": "已知算法为 GRPO（Group Relative Policy Optimization）。需要检索其最早提出的论文，并核对论文标题、作者和发表/公开信息。",
+              "action": "web_search",
+              "action_input": {
+                "query": "\"Group Relative Policy Optimization\" original paper GRPO authors",
+                "num_results": 5
+              },
+              "observation": "工具调用失败：TimeoutError: SerpApi 搜索超时，请稍后重试或改用 wiki_search",
+              "source_ids": []
+            },
+            {
+              "thought": "网页搜索超时；改用更具体的 arXiv 检索关键词，查找 GRPO 最初公开的论文及其书目信息。",
+              "action": "web_search",
+              "action_input": {
+                "query": "arXiv GRPO \"Group Relative Policy Optimization\" DeepSeekMath",
+                "num_results": 5
+              },
+              "observation": "[S6] MULTI-SCALE GROUP RELATIVE POLICY OPTIMIZA | https://openreview.net/pdf?id=ktHj6YazEE\nWe propose Multi-Scale Group Relative Policy Optimization (MS-GRPO), which improves upon. GRPO by leveraging multi-scale comparisons across response subgroups ...\n\n[S7] How Open-Source AI Learned to Reason Lik",
+              "source_ids": [
+                "S6",
+                "S7",
+                "S8",
+                "S9",
+                "S10"
+              ]
+            },
+            {
+              "thought": "检索结果将 GRPO 引向 DeepSeekMath，且 ICML 页面引用标记为 Shao-2024-Deepseekmath；下一步检索该论文的 arXiv 记录，以核实标题、作者和首次公开/发表信息。",
+              "action": "web_search",
+              "action_input": {
+                "query": "arXiv DeepSeekMath Pushing the Limits of Mathematical Reasoning in Open Language Models Shao 2024",
+                "num_results": 5
+              },
+              "observation": "[S11] Zhihong Shao | https://scholar.google.com.py/citations?user=PZy4HEIAAAAJ&hl=th\nผู้เขียนร่วม ; Deepseekmath: Pushing the limits of mathematical reasoning in open language models. Z Shao, P Wang, Q Zhu, R Xu, J Song, X Bi, H Zhang, M Zhang, ...\n\n[S12] DeepSeekMath: Pushing the Limits of Mathemat",
+              "source_ids": [
+                "S11",
+                "S12",
+                "S13",
+                "S14",
+                "S15"
+              ]
+            },
+            {
+              "thought": "已确认候选原始论文为 arXiv:2402.03300；需要直接读取其 arXiv 页面，核实完整作者名单、提交日期和 GRPO 的提出表述。",
+              "action": "fetch_page",
+              "action_input": {
+                "url": "https://arxiv.org/abs/2402.03300"
+              },
+              "observation": "[S16] [2402.03300] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models | https://arxiv.org/abs/2402.03300\nComputer Science > Computation and Language\narXiv:2402.03300\n(cs)\n[Submitted on 5 Feb 2024 (\nv1\n), last revised 27 Apr 2024 (this version, v3)]\nTitle:\nDeepSeekMath",
+              "source_ids": [
+                "S16"
+              ]
+            }
+          ],
+          "finished": false
+        }
+      ],
+      "followups": [],
+      "critique": {
+        "score": 9,
+        "issues": [],
+        "follow_up_questions": [],
+        "needs_revision": false
+      },
+      "verification": {
+        "stats": {
+          "claims": 11,
+          "supported": 9,
+          "partial": 2,
+          "unsupported": 0,
+          "removed": 0,
+          "fabricated_citations": 0,
+          "support_rate": 0.9091,
+          "hallucination_rate": 0.0
+        },
+        "checks": [
+          {
+            "id": 1,
+            "text": "DeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]",
+            "citations": [
+              "S1"
+            ],
+            "label": "supported",
+            "reason": "S1明确第一阶段RL设有GRPO裁剪比率"
+          },
+          {
+            "id": 2,
+            "text": "GRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]",
+            "citations": [
+              "S16"
+            ],
+            "label": "supported",
+            "reason": "S16称其引入GRPO，且为PPO变体"
+          },
+          {
+            "id": 3,
+            "text": "DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]",
+            "citations": [
+              "S2"
+            ],
+            "label": "supported",
+            "reason": "S2摘要明确说明两类模型及Zero训练方式"
+          },
+          {
+            "id": 4,
+            "text": "对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]",
+            "citations": [
+              "S2"
+            ],
+            "label": "supported",
+            "reason": "S2明确提及可读性、语言混杂与冷启动"
+          },
+          {
+            "id": 5,
+            "text": "关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。",
+            "citations": [],
+            "label": "supported",
+            "reason": "S1原文含“first stage of RL”和GRPO裁剪比率"
+          },
+          {
+            "id": 6,
+            "text": "这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]",
+            "citations": [
+              "S1"
+            ],
+            "label": "supported",
+            "reason": "GRPO裁剪比率直接表明该阶段使用GRPO"
+          },
+          {
+            "id": 7,
+            "text": "现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]",
+            "citations": [
+              "S1",
+              "S2"
+            ],
+            "label": "not_claim",
+            "reason": "属于对所给材料证据范围的保留说明"
+          },
+          {
+            "id": 8,
+            "text": "GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。",
+            "citations": [],
+            "label": "partial",
+            "reason": "S16称引入GRPO，但未明确其为最早提出"
+          },
+          {
+            "id": 9,
+            "text": "论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]",
+            "citations": [
+              "S16"
+            ],
+            "label": "supported",
+            "reason": "摘要明确称引入GRPO，且为PPO变体。"
+          },
+          {
+            "id": 10,
+            "text": "该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K.",
+            "citations": [],
+            "label": "supported",
+            "reason": "S16作者列表列出所述作者姓名。"
+          },
+          {
+            "id": 11,
+            "text": "Wu 和 Daya Guo。[S16]",
+            "citations": [
+              "S16"
+            ],
+            "label": "supported",
+            "reason": "S16作者列表含Y. Wu和Daya Guo。"
+          },
+          {
+            "id": 12,
+            "text": "该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16]",
+            "citations": [
+              "S16"
+            ],
+            "label": "partial",
+            "reason": "编号、日期和版本可见，DOI未提供。"
+          },
+          {
+            "id": 13,
+            "text": "现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]",
+            "citations": [
+              "S16"
+            ],
+            "label": "not_claim",
+            "reason": "属于对未能确认事项的说明。"
+          }
+        ],
+        "removed": [],
+        "fabricated_citations": []
+      },
+      "report": "## 结论\n\nDeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]  \nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]\n\n## 详细分析\n\n- DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]\n\n- 对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]\n\n- 关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]\n\n- 现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]\n\n- GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]\n\n- 该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu 和 Daya Guo。[S16]\n\n- 该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16] 现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]\n\n## 参考来源\n- [S1] DeepSeek-R1 incentivizes reasoning in LLMs through ... — https://www.nature.com/articles/s41586-025-09422-z\n- [S16] [2402.03300] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models — https://arxiv.org/abs/2402.03300\n- [S2] DeepSeek-R1: Incentivizing Reasoning Capability in LLMs ... — https://arxiv.org/html/2501.12948v1",
+      "sources": [
+        {
+          "id": "S1",
+          "tool": "web_search",
+          "title": "DeepSeek-R1 incentivizes reasoning in LLMs through ...",
+          "url": "https://www.nature.com/articles/s41586-025-09422-z",
+          "content": "In the first stage of RL, we set the learning rate to 3 × 10−6, the KL coefficient to 0.001, the GRPO clip ratio ϵ to 10 and the sampling ...",
+          "query": "DeepSeek-R1 official technical report reinforcement learning algorithm GRPO training stages"
+        },
+        {
+          "id": "S2",
+          "tool": "web_search",
+          "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs ...",
+          "url": "https://arxiv.org/html/2501.12948v1",
+          "content": "\\reportnumber\n001\nDeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning\nDeepSeek-AI\nresearch@deepseek.com\nAbstract\nWe introduce our first-generation reasoning models, DeepSeek-R1-Zero and DeepSeek-R1.\nDeepSeek-R1-Zero, a model trained via large-scale reinforcement learni",
+          "query": "DeepSeek-R1 official technical report reinforcement learning algorithm GRPO training stages"
+        },
+        {
+          "id": "S3",
+          "tool": "web_search",
+          "title": "Bite: How Deepseek R1 was trained",
+          "url": "https://www.philschmid.de/deepseek-r1",
+          "content": "5 Minute Read on how Deepseek R1 was trained using Group Relative Policy Optimization (GRPO) and RL-focused multi-stage training approach.",
+          "query": "DeepSeek-R1 official technical report reinforcement learning algorithm GRPO training stages"
+        },
+        {
+          "id": "S4",
+          "tool": "web_search",
+          "title": "Understanding DeepSeek R1—A Reinforcement Learning ...",
+          "url": "https://kili-technology.com/blog/understanding-deepseek-r1",
+          "content": "DeepSeek-R1 underwent two stages of reinforcement learning with GRPO: DeepSeek-R1-Zero: Applied GRPO directly on a base model without prior ...",
+          "query": "DeepSeek-R1 official technical report reinforcement learning algorithm GRPO training stages"
+        },
+        {
+          "id": "S5",
+          "tool": "web_search",
+          "title": "Enhancing Reasoning in LLMs with DeepSeek-R1",
+          "url": "https://medium.com/@galhyams/enhancing-reasoning-in-llms-with-deepseek-r1-a-technical-blogpost-reinforcement-learning-and-d76a61ffbd01",
+          "content": "In this blog post, I'll break down its RL framework, Group Relative Policy Optimization (GRPO), and explore R1's multi-stage training pipeline, ...",
+          "query": "DeepSeek-R1 official technical report reinforcement learning algorithm GRPO training stages"
+        },
+        {
+          "id": "S6",
+          "tool": "web_search",
+          "title": "MULTI-SCALE GROUP RELATIVE POLICY OPTIMIZA",
+          "url": "https://openreview.net/pdf?id=ktHj6YazEE",
+          "content": "We propose Multi-Scale Group Relative Policy Optimization (MS-GRPO), which improves upon. GRPO by leveraging multi-scale comparisons across response subgroups ...",
+          "query": "arXiv GRPO \"Group Relative Policy Optimization\" DeepSeekMath"
+        },
+        {
+          "id": "S7",
+          "tool": "web_search",
+          "title": "How Open-Source AI Learned to Reason Like a Genius",
+          "url": "https://medium.com/codeelevation/deepseekmath-and-grpo-how-open-source-ai-learned-to-reason-like-a-genius-a66f11a87644",
+          "content": "At the heart of DeepSeek's success was GRPO (Group Relative Policy Optimization), a new reinforcement learning algorithm first tested in ...",
+          "query": "arXiv GRPO \"Group Relative Policy Optimization\" DeepSeekMath"
+        },
+        {
+          "id": "S8",
+          "tool": "web_search",
+          "title": "Language as a Latent Variable for Reasoning Optimization",
+          "url": "https://arxiv.org/html/2604.21593v1",
+          "content": "3.3 Group Relative Policy Optimization Module. Then, we follows the GRPO (DeepSeek-AI et al., 2025) to optimization our model as shown in left- ...",
+          "query": "arXiv GRPO \"Group Relative Policy Optimization\" DeepSeekMath"
+        },
+        {
+          "id": "S9",
+          "tool": "web_search",
+          "title": "Demystifying the Maths Behind DeepSeek R1 — GRPO",
+          "url": "https://medium.com/@adityap2169/demystifying-the-maths-behind-deepseek-r1-grpo-21a2cf87d2d0",
+          "content": "GRPO (Group Relative Policy Optimization) improves upon PPO by using a group-based advantage function, optimizing policies within a batch ...",
+          "query": "arXiv GRPO \"Group Relative Policy Optimization\" DeepSeekMath"
+        },
+        {
+          "id": "S10",
+          "tool": "web_search",
+          "title": "Coloring your Incorrect Reasoning in GRPO",
+          "url": "https://icml.cc/virtual/2025/52442",
+          "content": "One of the most widely used RL methods is Group Relative Policy Optimization (GRPO)\\citep{Shao-2024-Deepseekmath}, known for its memory efficiency and ...",
+          "query": "arXiv GRPO \"Group Relative Policy Optimization\" DeepSeekMath"
+        },
+        {
+          "id": "S11",
+          "tool": "web_search",
+          "title": "Zhihong Shao",
+          "url": "https://scholar.google.com.py/citations?user=PZy4HEIAAAAJ&hl=th",
+          "content": "ผู้เขียนร่วม ; Deepseekmath: Pushing the limits of mathematical reasoning in open language models. Z Shao, P Wang, Q Zhu, R Xu, J Song, X Bi, H Zhang, M Zhang, ...",
+          "query": "arXiv DeepSeekMath Pushing the Limits of Mathematical Reasoning in Open Language Models Shao 2024"
+        },
+        {
+          "id": "S12",
+          "tool": "web_search",
+          "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning ...",
+          "url": "https://www.youtube.com/watch?v=UdVPjuKwedk&xstg=CAMSBhUDzO3xHw%3D%3D",
+          "content": "title: DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models author: Zhihong Shao, Peiyi Wang, Qihao Zhu, ...",
+          "query": "arXiv DeepSeekMath Pushing the Limits of Mathematical Reasoning in Open Language Models Shao 2024"
+        },
+        {
+          "id": "S13",
+          "tool": "web_search",
+          "title": "1Introduction",
+          "url": "https://arxiv.org/html/2603.06621v1",
+          "content": "Li, et al. Deepseekmath: pushing the limits of mathematical reasoning in open language models. arXiv preprint arXiv:2402.03300.",
+          "query": "arXiv DeepSeekMath Pushing the Limits of Mathematical Reasoning in Open Language Models Shao 2024"
+        },
+        {
+          "id": "S14",
+          "tool": "web_search",
+          "title": "Position: formal mathematical reasoning—a new frontier in AI",
+          "url": "https://dl.acm.org/doi/10.5555/3780338.3783662",
+          "content": "DeepSeekMath: Pushing the limits of mathematical reasoning in open language models. arXiv preprint arXiv:2402.03300, 2024. Google Scholar. [98].",
+          "query": "arXiv DeepSeekMath Pushing the Limits of Mathematical Reasoning in Open Language Models Shao 2024"
+        },
+        {
+          "id": "S15",
+          "tool": "web_search",
+          "title": "‪Qihao Zhu‬ - ‪Google Scholar‬",
+          "url": "https://scholar.google.cz/citations?user=zuDBEIEAAAAJ&hl=hi",
+          "content": "Deepseekmath: Pushing the limits of mathematical reasoning in open language models. Z Shao, P Wang, Q Zhu, R Xu, J Song, X Bi, H Zhang, M Zhang, YK Li, ...",
+          "query": "arXiv DeepSeekMath Pushing the Limits of Mathematical Reasoning in Open Language Models Shao 2024"
+        },
+        {
+          "id": "S16",
+          "tool": "fetch_page",
+          "title": "[2402.03300] DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+          "url": "https://arxiv.org/abs/2402.03300",
+          "content": "Computer Science > Computation and Language\narXiv:2402.03300\n(cs)\n[Submitted on 5 Feb 2024 (\nv1\n), last revised 27 Apr 2024 (this version, v3)]\nTitle:\nDeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models\nAuthors:\nZhihong Shao\n,\nPeiyi Wang\n,\nQihao Zhu\n,\nRunxin Xu\n,\nJunxi",
+          "query": "https://arxiv.org/abs/2402.03300"
+        }
+      ],
+      "snapshots": [
+        {
+          "stage": "plan_solve",
+          "report": "## 结论\n\nDeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]  \nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]\n\n## 详细分析\n\n- DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]\n\n- 对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]\n\n- 关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]\n\n- 现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]\n\n- GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]\n\n- 该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu 和 Daya Guo。[S16]\n\n- 该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16] 现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]",
+          "seconds": 208.32,
+          "llm_calls": 12,
+          "total_tokens": 19372,
+          "tool_calls": 8
+        },
+        {
+          "stage": "reflection",
+          "report": "## 结论\n\nDeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]  \nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]\n\n## 详细分析\n\n- DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]\n\n- 对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]\n\n- 关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]\n\n- 现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]\n\n- GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]\n\n- 该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu 和 Daya Guo。[S16]\n\n- 该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16] 现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]",
+          "seconds": 211.33,
+          "llm_calls": 13,
+          "total_tokens": 20643,
+          "tool_calls": 8
+        },
+        {
+          "stage": "verified",
+          "report": "## 结论\n\nDeepSeek-R1 训练中使用的强化学习算法是 **GRPO（Group Relative Policy Optimization，组相对策略优化）**；公开材料可确认其第一阶段强化学习设置中使用了 GRPO 裁剪比率。[S1]  \nGRPO 最早由 DeepSeek 团队在论文 **《DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models》**中提出，该论文将其描述为 PPO 的一种变体。[S16]\n\n## 详细分析\n\n- DeepSeek-R1 官方技术报告《DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning》介绍了 DeepSeek-R1-Zero 与 DeepSeek-R1 两类推理模型，并明确说明 DeepSeek-R1-Zero 在未进行监督微调（SFT）预备步骤的条件下，通过大规模强化学习（RL）训练获得推理能力。[S2]\n\n- 对于 DeepSeek-R1，报告说明其为解决 R1-Zero 可读性较差、语言混杂等问题，采用多阶段训练方案，并在强化学习之前引入冷启动数据。[S2]\n\n- 关于具体算法，DeepSeek-R1 的公开材料显示：“在 RL 的第一阶段”，训练配置包含 “GRPO clip ratio（GRPO 裁剪比率）”。这一表述能够确认该阶段采用的强化学习算法为 GRPO。[S1]\n\n- 现有来源仅能直接确认第一阶段 RL 使用 GRPO；对于 DeepSeek-R1 后续各强化学习阶段是否均使用同一算法、各阶段的完整顺序、奖励设计和超参数，所给材料未提供足以逐项核实的完整正文证据，因此不能作进一步确定性断言。[S1][S2]\n\n- GRPO 的原始提出论文为 *DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models*。论文摘要明确称“we introduce Group Relative Policy Optimization (GRPO)”，并说明 GRPO 是 PPO 的一种变体。[S16]\n\n- 该论文作者为 Zhihong Shao、Peiyi Wang、Qihao Zhu、Runxin Xu、Junxiao Song、Xiao Bi、Haowei Zhang、Mingchuan Zhang、Y.K. Li、Y. Wu 和 Daya Guo。[S16]\n\n- 该论文以 arXiv 预印本 **arXiv:2402.03300 [cs.CL]** 公开，v1 于 2024 年 2 月 5 日提交，所示最新版本为 v3、修订于 2024 年 4 月 27 日，DOI 为 10.48550/arXiv.2402.03300。[S16] 现有材料只能确认其 arXiv 公开信息，未能确认是否存在另行发表的正式会议或期刊版本。[S16]",
+          "seconds": 228.58,
+          "llm_calls": 15,
+          "total_tokens": 24871,
+          "tool_calls": 8
+        }
+      ],
+      "usage": {
+        "total": {
+          "calls": 15,
+          "prompt_tokens": 21344,
+          "completion_tokens": 3527,
+          "seconds": 50.99268462497275,
+          "total_tokens": 24871
+        },
+        "stages": {
+          "plan": {
+            "calls": 1,
+            "prompt_tokens": 262,
+            "completion_tokens": 142,
+            "seconds": 2.384282667073421,
+            "total_tokens": 404
+          },
+          "execute": {
+            "calls": 10,
+            "prompt_tokens": 15365,
+            "completion_tokens": 1626,
+            "seconds": 22.620697415899485,
+            "total_tokens": 16991
+          },
+          "write": {
+            "calls": 1,
+            "prompt_tokens": 1348,
+            "completion_tokens": 629,
+            "seconds": 5.724289583042264,
+            "total_tokens": 1977
+          },
+          "reflect": {
+            "calls": 1,
+            "prompt_tokens": 1044,
+            "completion_tokens": 227,
+            "seconds": 3.008657291997224,
+            "total_tokens": 1271
+          },
+          "verify": {
+            "calls": 2,
+            "prompt_tokens": 3325,
+            "completion_tokens": 903,
+            "seconds": 17.25475766696036,
+            "total_tokens": 4228
+          }
+        }
+      },
+      "seconds": 228.58,
+      "tool_calls": 8
+    }
+  }
+}
