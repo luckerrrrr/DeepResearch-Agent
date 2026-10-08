@@ -1,0 +1,6 @@
+[server]
+# 只监听本机：页面会调用你的 API 密钥，不要暴露给局域网
+address = "localhost"
+
+[browser]
+gatherUsageStats = false
