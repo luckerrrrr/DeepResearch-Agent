@@ -1,0 +1,92 @@
+[
+  {
+    "id": "q01",
+    "question": "提出 Transformer 架构的论文发表于哪一年的哪个会议？该论文的第一作者是谁？",
+    "answer": "2017 年的 NeurIPS（当时称 NIPS 2017）；第一作者是 Ashish Vaswani。",
+    "key_points": ["2017 年", "NeurIPS / NIPS", "Ashish Vaswani"]
+  },
+  {
+    "id": "q02",
+    "question": "ReAct 论文（ReAct: Synergizing Reasoning and Acting in Language Models）的第一作者是谁？他在哪所大学攻读博士学位？",
+    "answer": "第一作者是姚顺雨（Shunyu Yao），在普林斯顿大学攻读博士学位。",
+    "key_points": ["姚顺雨 / Shunyu Yao", "普林斯顿大学 / Princeton"]
+  },
+  {
+    "id": "q03",
+    "question": "2024 年诺贝尔物理学奖授予了哪两位科学家？其中哪一位还获得过图灵奖，是哪一年度的图灵奖？",
+    "answer": "John Hopfield 和 Geoffrey Hinton；Hinton 获得了 2018 年度图灵奖（2019 年 3 月公布）。",
+    "key_points": ["John Hopfield", "Geoffrey Hinton", "Hinton 获得过图灵奖", "2018 年度（答 2019 年公布也算正确）"]
+  },
+  {
+    "id": "q04",
+    "question": "DeepSeek-R1 训练中使用的强化学习算法叫什么？该算法最早在哪篇论文中提出？",
+    "answer": "GRPO（Group Relative Policy Optimization），最早在 DeepSeekMath 论文中提出。",
+    "key_points": ["GRPO", "DeepSeekMath"]
+  },
+  {
+    "id": "q05",
+    "question": "Model Context Protocol（MCP）是由哪家公司在什么时间发布的？",
+    "answer": "Anthropic，2024 年 11 月。",
+    "key_points": ["Anthropic", "2024 年 11 月"]
+  },
+  {
+    "id": "q06",
+    "question": "2012 年 ImageNet 竞赛（ILSVRC）的冠军模型叫什么？该模型的作者中，谁后来成为了 OpenAI 的联合创始人？",
+    "answer": "AlexNet；Ilya Sutskever。",
+    "key_points": ["AlexNet", "Ilya Sutskever"]
+  },
+  {
+    "id": "q07",
+    "question": "BERT 模型由哪家公司提出？它的论文获得了哪个学术会议的最佳论文奖？",
+    "answer": "Google；NAACL 2019 最佳长论文奖。",
+    "key_points": ["Google", "NAACL 2019"]
+  },
+  {
+    "id": "q08",
+    "question": "GPT-3 论文的英文标题是什么？它获得了哪一年 NeurIPS 的最佳论文奖？",
+    "answer": "Language Models are Few-Shot Learners；NeurIPS 2020 最佳论文奖。",
+    "key_points": ["Language Models are Few-Shot Learners", "NeurIPS 2020"]
+  },
+  {
+    "id": "q09",
+    "question": "AlphaGo 在 2016 年与李世石的五番棋比赛中最终比分是多少？开发 AlphaGo 的公司，其联合创始人中谁获得了 2024 年诺贝尔化学奖？",
+    "answer": "AlphaGo 以 4:1 获胜；DeepMind 联合创始人 Demis Hassabis 获得 2024 年诺贝尔化学奖。",
+    "key_points": ["4:1", "DeepMind", "Demis Hassabis"]
+  },
+  {
+    "id": "q10",
+    "question": "CRISPR-Cas9 基因编辑技术的发现者获得诺贝尔化学奖是在哪一年？两位获奖者分别是谁？",
+    "answer": "2020 年；Emmanuelle Charpentier 和 Jennifer Doudna。",
+    "key_points": ["2020 年", "Emmanuelle Charpentier", "Jennifer Doudna"]
+  },
+  {
+    "id": "q11",
+    "question": "悉尼歌剧院的设计师是谁？他在哪一年获得普利兹克建筑奖？",
+    "answer": "约恩·乌松（Jørn Utzon），2003 年获得普利兹克建筑奖。",
+    "key_points": ["约恩·乌松 / Jørn Utzon", "2003 年"]
+  },
+  {
+    "id": "q12",
+    "question": "《Attention Is All You Need》论文的作者中，谁后来联合创立了 Cohere？",
+    "answer": "Aidan Gomez。",
+    "key_points": ["Aidan Gomez"]
+  },
+  {
+    "id": "q13",
+    "question": "Reflexion（Language Agents with Verbal Reinforcement Learning）论文的第一作者是谁？该论文发表在哪个会议？",
+    "answer": "Noah Shinn；NeurIPS 2023。",
+    "key_points": ["Noah Shinn", "NeurIPS 2023"]
+  },
+  {
+    "id": "q14",
+    "question": "刘慈欣凭借哪部作品获得了雨果奖最佳长篇小说奖？是哪一年获得的？",
+    "answer": "《三体》，2015 年。",
+    "key_points": ["《三体》", "2015 年"]
+  },
+  {
+    "id": "q15",
+    "question": "Python 语言的创始人是谁？他在 2020 年结束退休后加入了哪家公司？",
+    "answer": "Guido van Rossum；微软（Microsoft）。",
+    "key_points": ["Guido van Rossum", "微软 / Microsoft"]
+  }
+]

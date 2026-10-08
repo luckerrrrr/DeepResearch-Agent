@@ -1,0 +1,10 @@
+openai>=1.40
+python-dotenv>=1.0
+mcp>=2.3,<3
+requests>=2.31
+beautifulsoup4>=4.12
+numpy>=1.26
+fastembed>=0.5
+streamlit>=1.40
+matplotlib>=3.8
+pytest>=8.0
